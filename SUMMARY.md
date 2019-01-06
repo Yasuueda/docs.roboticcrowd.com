@@ -18,4 +18,5 @@
 
 * [OpenBrowser](browser/openbrowser.md)
 * [GoTo](browser/goto.md)
+* [CloseBrowser](browser/closebrowser.md)
 
