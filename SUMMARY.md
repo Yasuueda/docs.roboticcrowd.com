@@ -17,4 +17,13 @@
 ## Actions
 
 * [Browser](actions/browser.md)
+* [Text](actions/text.md)
+* [Data](actions/data.md)
+* [ComputerVision](actions/computervision.md)
+* [Excel](actions/excel.md)
+* [Google Spreadsheet](actions/google-spreadsheet.md)
+* [Gmail](actions/gmail.md)
+* [Storage](actions/storage.md)
+* [WebService](actions/webservice.md)
+* [HumanIntelligence](actions/humanintelligence.md)
 
