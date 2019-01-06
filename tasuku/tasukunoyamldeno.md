@@ -6,7 +6,7 @@
 
 例えば、[ロボットを動かしてみる](../robotic-crowdno/1demerurobotic-crowd.md) で紹介したYamlのはじめの2つのアクションで説明します。
 
-```text
+```yaml
 # Yahoo! Japan を開く
 +open_browser_1:
   action>: OpenBrowser

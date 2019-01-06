@@ -23,7 +23,7 @@ OpenBrowserは、ほぼすべてのワークフローで利用されるアクシ
 
 ### 使用例
 
-```text
+```yaml
 +open_browser_1:
   action>: OpenBrowser
   url: 'https://yahoo.co.jp'

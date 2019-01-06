@@ -10,9 +10,9 @@
 
 ## タスク
 
-* [タスクのYamlでの記述](task/tasukunoyamldeno.md)
-* [アクションタスク](task/tasukuno.md)
-* [コントロールタスク](task/untitled.md)
+* [タスクのYamlでの記述](tasuku/tasukunoyamldeno.md)
+* [アクションタスク](tasuku/tasukuno.md)
+* [コントロールタスク](tasuku/untitled.md)
 
 ## ブラウザアクション
 
