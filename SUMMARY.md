@@ -14,10 +14,7 @@
 * [アクションタスク](task/actions.md)
 * [コントロールタスク](task/controls.md)
 
-## Browser
+## Actions
 
-* [OpenBrowser](browser/openbrowser.md)
-* [GoTo](browser/goto.md)
-* [CloseBrowser](browser/closebrowser.md)
-* [Click](browser/click.md)
+* [Browser](actions/browser.md)
 
