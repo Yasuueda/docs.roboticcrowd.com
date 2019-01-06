@@ -4,7 +4,7 @@
 
 ここでは、Yaml形式でタスクがどのように記述されるかを説明します。基本的には、一般的なYamlの形式と同じものですが、 Robotic Crowdでは、[Digdag](https://www.digdag.io/)というOSSで拡張されたYamlを使っています。
 
-例えば、[ロボットを動かしてみる](../overview/run-robot.md) で紹介したYamlのはじめの2つのアクションで説明します。
+例えば、[ロボットを動かしてみる](../robotic-crowdno/run-robot.md) で紹介したYamlのはじめの2つのアクションで説明します。
 
 ```yaml
 # Yahoo! Japan を開く
