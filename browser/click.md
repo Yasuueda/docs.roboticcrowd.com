@@ -34,6 +34,7 @@ Clickは、ブラウザの内の指定の要素をクリックします。クリ
 +click_1:
   action>: Click
   browser: +open_browser_1
+  selector: 'input#download'
   ingnoreError: false
   waitForDownload: true
   highResolution: true
