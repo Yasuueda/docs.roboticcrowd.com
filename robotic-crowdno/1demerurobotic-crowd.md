@@ -1,10 +1,6 @@
----
-description: >-
-  すぐに Robotic Crowd を始める方法。Visual Modeの使いかたは、https://intercom.help/roboticcrowd
-  のGuide記事の方を参照してください。
----
-
 # ロボットを動かしてみる
+
+すぐに Robotic Crowd を始める方法。Visual Modeの使いかたは、[https://intercom.help/roboticcrowd](https://intercom.help/roboticcrowd) のGuide記事の方を参照してください。
 
 ## 5分で体験する Robotic Crowd
 

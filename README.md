@@ -6,9 +6,3 @@ description: >-
 
 # Robotic Crowd
 
-## [とりあえず動かしてみる](robotic-crowdno/1demerurobotic-crowd.md)
-
-## Robotic Crowd の全体システムの概要
-
-* ロボットが動作する仕組み
-* 
