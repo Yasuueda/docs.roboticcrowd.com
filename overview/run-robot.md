@@ -8,7 +8,7 @@
 
 次のワークフローは、Yahoo! Japan でミーアキャットを検索した結果を取得するワークフローのサンプルです。
 
-```text
+```yaml
 # Yahoo! Japan を開く
 +open_browser_1:
   action>: OpenBrowser
