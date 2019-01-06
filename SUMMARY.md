@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Robotic Crowd アクションガイド](README.md)
+* [アクションドキュメント](README.md)
 
 ## Overview
 

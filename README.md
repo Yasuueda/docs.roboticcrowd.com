@@ -4,7 +4,7 @@ description: >-
   のガイドをすべて完了した方、あるいは、技術に親しみがあり技術的な情報に興味のある方を想定しています。
 ---
 
-# Robotic Crowd アクションガイド
+# アクションドキュメント
 
 主にYamlでの設定の方法について説明しています。Visual Modeの使いかたは、[https://intercom.help/roboticcrowd](https://intercom.help/roboticcrowd) のGuide記事の方を参照してください。
 
