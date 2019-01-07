@@ -418,15 +418,104 @@ SubmitFormは、クリックやキーの送信ではなく、プログラム的�
 
 ## TakeScreenshot
 
-TODO
+### 概要
+
+TakeScreenshotは、ブラウザの画面を画像として保存するアクションです。画像ファイルのパスをアウトプットします。
+
+### パラメーター <a id="paramt-9"></a>
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| browser\* | 文字列 | ブラウザの接続先 | +open\_browser\_1 |
+| full\_page | 真理値 | trueの時、スクロール可能な領域を含めて全体をスクリーンショットします。falseのときは、ウィンドウサイズのみ撮影します。 | false \(default\) |
+| highResolution | 真理値 | ウィンドウを1280x720まで拡大してからクリックする。 | false \(default\) |
+| waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
+| waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
+
+### アウトプット <a id="autoputto-9"></a>
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| Image | 文字列 | 撮影した画面のpngファイルのパス。 | /tmp/fb4edcb2/screenshots/1.png |
+
+### 使用例 <a id="shi-yong-li-9"></a>
+
+ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。高解像度モードで全ページを撮影する。
+
+```yaml
++take_screenshot_1:
+  action>: TakeScreenshot
+  browser: +open_browser_1
+  full_page: true
+  hightResolution: true
+```
 
 ## TakeElementShot
 
-TODO
+### 概要
+
+TakeElementShotは、ブラウザに表示されている一部の要素のみ撮影します。
+
+### パラメーター <a id="paramt-9"></a>
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| browser\* | 文字列 | ブラウザの接続先 | +open\_browser\_1 |
+| selector\* | 文字列 | 撮影する要素のCSSセレクター | p &gt; img |
+| highResolution | 真理値 | ウィンドウを1280x720まで拡大してからクリックする。 | false \(default\) |
+| waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
+| waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
+
+### アウトプット <a id="autoputto-9"></a>
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| Image | 文字列 | 撮影した画面のpngファイルのパス。 | /tmp/fb4edcb2/screenshots/1.png |
+
+### 使用例 <a id="shi-yong-li-9"></a>
+
+ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。高解像度モードで画像要素のみ撮影する。
+
+```yaml
++take_element_shot_1:
+  action>: TakeElementShot
+  browser: +open_browser_1
+  selector: 'p > img'
+  hightResolution: true
+```
 
 ## WaitForDownload
 
-TODO
+### 概要
+
+WaitForDownloadは、ダウンロード中のファイルのダウンロードが完了するのをまちます。このアクションが呼び出されると、ダウンロードファイルが一つ増えるまでまち、ダウンロード中のファイル（.crdownloadで終わるファイル）があれば完了するまでまちます。最大で3分まちます。
+
+### パラメーター <a id="paramt-9"></a>
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| timeout | 整数 | 最大の待ち時間（ms）。 | 180000 \(default\) |
+
+### アウトプット <a id="autoputto-9"></a>
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| Boolean | 真理値 | タイムアウトせずに完了するとtrue、タイムアウトで完了した場合は、falseになります。 | true |
+
+### 使用例 <a id="shi-yong-li-9"></a>
+
+ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。
+
+```yaml
++wait_for_download_1:
+  action>: WaitForDownload
+```
 
 ## GetDownloadFiles
 
