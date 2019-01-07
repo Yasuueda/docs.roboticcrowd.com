@@ -519,7 +519,32 @@ WaitForDownloadは、ダウンロード中のファイルのダウンロード�
 
 ## GetDownloadFiles
 
-TODO
+### 概要
+
+GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を取得します。
+
+### パラメーター <a id="paramt-9"></a>
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| - | - | - | - |
+
+### アウトプット <a id="autoputto-9"></a>
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| List | 配列 | ファイルの一覧を返します。 | \["/path/to/downloads/1.png", "/path/to/downloads2.png"\] |
+
+### 使用例 <a id="shi-yong-li-9"></a>
+
+ダウンロードフォルダのファイル一覧を取得します。
+
+```yaml
++get_download_files_1:
+  action>: GetDownloadFiles
+```
 
 ## ScrapePage
 
