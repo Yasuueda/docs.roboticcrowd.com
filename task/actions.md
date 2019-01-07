@@ -5,8 +5,8 @@
 アクションタスクは、実際になにかの操作を行うタスクです。0個以上のパラメーター（インプット）と1つのアウトプットを持ちます。
 
 * Browser
-  * OpenBrowser
-  * GoTo
+  * [OpenBrowser](../actions/browser.md#openbrowser)
+  * [GoTo](../actions/browser.md#goto)
   * CloseBrowser
   * Click
   * Hover
