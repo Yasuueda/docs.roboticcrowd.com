@@ -27,3 +27,7 @@
 * [WebService](actions/webservice.md)
 * [HumanIntelligence](actions/humanintelligence.md)
 
+## Search
+
+* [セッションの検索](search/session.md)
+
