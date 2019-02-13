@@ -25,7 +25,7 @@ description: セッションの検索の概要について記載します。
 | キー | フォーマット | 入力例 | 検索条件 | 複数指定時 |
 | :--- | :--- | :--- | :--- | :--- |
 | （無し） | 文字列（スペース無し） | 会議室予約 | 前方一致検索 | OR |
-| is | error / success / running / queued | is:error | エラー終了ステータスのみ | OR |
+| is | error / success / running / queued | is:error | エラー終了ステータスのみ | 未対応 |
 | after | YYYY-MM-DD hh:mm | after:"2018-09-01 17:00" | この時刻以降に作成 | 後の時刻を優先 |
 | before | YYYY-MM-DD hh:mm | before:"2018-09-01 18:00" | この時刻より前に作成 | 前の時刻を優先 |
 
