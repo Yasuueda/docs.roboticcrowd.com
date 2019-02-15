@@ -26,6 +26,7 @@
 * [Storage](actions/storage.md)
 * [WebService](actions/webservice.md)
 * [HumanIntelligence](actions/humanintelligence.md)
+* [Control](actions/control.md)
 
 ## Search
 
