@@ -244,6 +244,44 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
 
 
 
+## SelectOption
+
+### 概要
+
+選択肢型のUIを操作して、その値（value）により選択肢を選択します。
+
+### パラメーター
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| browser\* | 文字列 | ブラウザの接続先 | +open\_browser\_1 |
+| selector\* | 文字列 | 操作対象のCSSセレクタ | \#optionSelect |
+| value\* | 文字列 | 選択する値 | okinawa |
+| ignoreError | 真理値 | CSSセレクタが見つからないなどのエラーが発生しても次のタスクへ進む。 | true \(default\) |
+| waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
+| waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
+
+### アウトプット
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| Browser | 文字列 | 起動したブラウザのWebSocketアドレス | ws://127.0.0.1:52582/devtools/browser/be5e7b6e-ce64-4040-a7af-15ecc7b125f0 |
+
+### 使用例
+
+ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。選択肢で8を選択する。
+
+```yaml
++select_option_1:
+  action>: SElectOption
+  browser: +open_browser_1
+  selector: '#startHour'
+  value: 8
+  ingnoreError: false
+```
+
 ## SetFileToUpload
 
 ### 概要
