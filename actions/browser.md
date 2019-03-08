@@ -248,7 +248,7 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
 
 ### 概要
 
-選択肢型のUIを操作して、その値（value）により選択肢を選択します。
+選択肢型のUIを操作して、その値（value）または、表示名（innerText）により選択肢を選択します。
 
 ### パラメーター
 
@@ -258,10 +258,13 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
 | :--- | :--- | :--- | :--- |
 | browser\* | 文字列 | ブラウザの接続先 | +open\_browser\_1 |
 | selector\* | 文字列 | 操作対象のCSSセレクタ | \#optionSelect |
-| value\* | 文字列 | 選択する値 | okinawa |
+| value\*\(1\) | 文字列 | 選択する値（value）で選択する | okinawa |
+| text\*\(1\) | 文字列 | 選択肢の表示名（innerText）で選択する | 沖縄 |
 | ignoreError | 真理値 | CSSセレクタが見つからないなどのエラーが発生しても次のタスクへ進む。 | true \(default\) |
 | waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
 | waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
+
+\(\*1\) どちらか必須 
 
 ### アウトプット
 
