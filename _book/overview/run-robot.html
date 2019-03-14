@@ -1,0 +1,542 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ロボットを動かしてみる · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="session-and-queue.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    アクションドキュメント
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="run-robot.html">
+            
+                <a href="run-robot.html">
+            
+                    
+                    ロボットを動かしてみる
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="session-and-queue.html">
+            
+                <a href="session-and-queue.html">
+            
+                    
+                    実行要求とキュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    ワークフロー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Task</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../task/taks-in-yaml.html">
+            
+                <a href="../task/taks-in-yaml.html">
+            
+                    
+                    タスクのYamlでの記述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../task/actions.html">
+            
+                <a href="../task/actions.html">
+            
+                    
+                    アクションタスク
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../task/controls.html">
+            
+                <a href="../task/controls.html">
+            
+                    
+                    コントロールタスク
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Actions</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../actions/browser.html">
+            
+                <a href="../actions/browser.html">
+            
+                    
+                    Browser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../actions/text.html">
+            
+                <a href="../actions/text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../actions/data.html">
+            
+                <a href="../actions/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../actions/computervision.html">
+            
+                <a href="../actions/computervision.html">
+            
+                    
+                    ComputerVision
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../actions/excel.html">
+            
+                <a href="../actions/excel.html">
+            
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../actions/google-spreadsheet.html">
+            
+                <a href="../actions/google-spreadsheet.html">
+            
+                    
+                    Google Spreadsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../actions/gmail.html">
+            
+                <a href="../actions/gmail.html">
+            
+                    
+                    Gmail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../actions/storage.html">
+            
+                <a href="../actions/storage.html">
+            
+                    
+                    Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../actions/webservice.html">
+            
+                <a href="../actions/webservice.html">
+            
+                    
+                    WebService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../actions/humanintelligence.html">
+            
+                <a href="../actions/humanintelligence.html">
+            
+                    
+                    HumanIntelligence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../actions/control.html">
+            
+                <a href="../actions/control.html">
+            
+                    
+                    Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Search</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../search/session.html">
+            
+                <a href="../search/session.html">
+            
+                    
+                    セッションの検索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ロボットを動かしてみる</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30ED;&#x30DC;&#x30C3;&#x30C8;&#x3092;&#x52D5;&#x304B;&#x3057;&#x3066;&#x307F;&#x308B;">&#x30ED;&#x30DC;&#x30C3;&#x30C8;&#x3092;&#x52D5;&#x304B;&#x3057;&#x3066;&#x307F;&#x308B;</h1>
+<p>&#x3059;&#x3050;&#x306B; Robotic Crowd &#x3092;&#x59CB;&#x3081;&#x308B;&#x65B9;&#x6CD5;&#x3002;Visual Mode&#x306E;&#x4F7F;&#x3044;&#x304B;&#x305F;&#x306F;&#x3001;<a href="https://intercom.help/roboticcrowd" target="_blank">https://intercom.help/roboticcrowd</a> &#x306E;Guide&#x8A18;&#x4E8B;&#x306E;&#x65B9;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h2 id="5&#x5206;&#x3067;&#x4F53;&#x9A13;&#x3059;&#x308B;-robotic-crowd">5&#x5206;&#x3067;&#x4F53;&#x9A13;&#x3059;&#x308B; Robotic Crowd</h2>
+<h3 id="yaml&#x306E;&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30B3;&#x30D4;&#x30FC;&#x306B;&#x3088;&#x308B;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306E;">Yaml&#x306E;&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30B3;&#x30D4;&#x30FC;&#x306B;&#x3088;&#x308B;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306E;</h3>
+<p>&#x6B21;&#x306E;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306F;&#x3001;Yahoo! Japan &#x3067;&#x30DF;&#x30FC;&#x30A2;&#x30AD;&#x30E3;&#x30C3;&#x30C8;&#x3092;&#x691C;&#x7D22;&#x3057;&#x305F;&#x7D50;&#x679C;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x3067;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># Yahoo! Japan &#x3092;&#x958B;&#x304F;</span>
++open_browser_1:
+  action&gt;: OpenBrowser
+<span class="hljs-attr">  url:</span> <span class="hljs-string">&apos;https://www.yahoo.co.jp/&apos;</span>
+
+<span class="hljs-comment"># &#x691C;&#x7D22;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306B;&#x30DF;&#x30FC;&#x30A2;&#x30AD;&#x30E3;&#x30C3;&#x30C8;&#x3092;&#x5165;&#x529B;</span>
++type_text_1:
+  action&gt;: TypeText
+<span class="hljs-attr">  browser:</span> +open_browser_1
+<span class="hljs-attr">  selector:</span> <span class="hljs-string">&apos;input#srchtxt&apos;</span>
+<span class="hljs-attr">  text:</span> <span class="hljs-string">&apos;&#x30DF;&#x30FC;&#x30A2;&#x30AD;&#x30E3;&#x30C3;&#x30C8;&apos;</span>
+<span class="hljs-attr">  clearValue:</span> <span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># &#x691C;&#x7D22;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;</span>
++click_1:
+  action&gt;: Click
+<span class="hljs-attr">  browser:</span> +type_text_1
+<span class="hljs-attr">  selector:</span> <span class="hljs-string">&apos;input#srchbtn&apos;</span>
+
+<span class="hljs-comment"># &#x691C;&#x7D22;&#x7D50;&#x679C;&#x306E;&#x30B9;&#x30AF;&#x30EA;&#x30FC;&#x30F3;&#x30B7;&#x30E7;&#x30C3;&#x30C8;&#x3092;&#x64AE;&#x308B;</span>
++take_screenshot_1:
+  action&gt;: TakeScreenshot
+<span class="hljs-attr">  browser:</span> +click_1
+<span class="hljs-attr">  full_page:</span> <span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># &#x30DF;&#x30FC;&#x30A2;&#x30AD;&#x30E3;&#x30C3;&#x30C8;&#x753B;&#x50CF;&#x90E8;&#x5206;&#x306E;&#x30B9;&#x30AF;&#x30EA;&#x30FC;&#x30F3;&#x30B7;&#x30E7;&#x30C3;&#x30C8;&#x3092;&#x64AE;&#x308B;</span>
++take_element_shot_1:
+  action&gt;: TakeElementShot
+<span class="hljs-attr">  browser:</span> +click_1
+<span class="hljs-attr">  selector:</span> <span class="hljs-string">&apos;div#sIn div.gglImg.visible &gt; a &gt; img&apos;</span>
+<span class="hljs-attr">  ignoreError:</span> <span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># &#x30DF;&#x30FC;&#x30A2;&#x30AD;&#x30E3;&#x30C3;&#x30C8;&#x306E;&#x6982;&#x8981;&#x3092;&#x53D6;&#x5F97;</span>
++get_text_1:
+  action&gt;: GetText
+<span class="hljs-attr">  browser:</span> +click_1
+<span class="hljs-attr">  selector:</span> <span class="hljs-string">&apos;div#sIn div.bd_9&apos;</span>
+</code></pre>
+<p>&#x3053;&#x306E;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x3001;Robotic Crowd &#x3067;&#x65B0;&#x898F;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306B;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x30FC;&#x30E2;&#x30FC;&#x30C9;&#x3067;&#x30DA;&#x30FC;&#x30B9;&#x30C8;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x30FC;&#x30E2;&#x30FC;&#x30C9;&#x304B;&#x3089;&#x30F4;&#x30A3;&#x30B8;&#x30E5;&#x30A2;&#x30EB;&#x30E2;&#x30FC;&#x30C9;&#x3078;&#x5207;&#x308A;&#x66FF;&#x3048;&#x308B;&#xFF08;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x30FC;&#x30E2;&#x30FC;&#x30C9;&#x3092;OFF&#x306B;&#x3059;&#x308B;&#xFF09;&#x3068;GUI&#x3067;&#x3082;&#x540C;&#x69D8;&#x306B;&#x5B9A;&#x7FA9;&#x304C;&#x53CD;&#x6620;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x5B9F;&#x884C;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;">&#x5B9F;&#x884C;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;</h3>
+<p>&#x30DA;&#x30FC;&#x30B9;&#x30C8;&#x3057;&#x3066;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x3059;&#x3050;&#x306B;&#x30ED;&#x30DC;&#x30C3;&#x30C8;&#x304C;&#x8D77;&#x52D5;&#x3057;&#x3001;&#x5B9F;&#x884C;&#x3092;&#x958B;&#x59CB;&#x3057;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x304F;&#x308B;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x306E;&#x30ED;&#x30B0;&#x306F;&#x3001;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x51FA;&#x3066;&#x3044;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="../.gitbook/assets/sukurnshotto-2018-12-29-162157.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: アクションドキュメント">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="session-and-queue.html" class="navigation navigation-next " aria-label="Next page: 実行要求とキュー">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ロボットを動かしてみる","level":"2.1","depth":1,"next":{"title":"実行要求とキュー","level":"2.2","depth":1,"path":"overview/session-and-queue.md","ref":"overview/session-and-queue.md","articles":[]},"previous":{"title":"アクションドキュメント","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"overview/run-robot.md","mtime":"2019-03-14T04:54:14.158Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-14T06:16:47.048Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

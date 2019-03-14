@@ -15,7 +15,7 @@ CreateSpreadsheetは、スプレッドシートを新たに作成するアクシ
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | title\* | 文字列 | スプレッドシートのタイトル | test |
-| provider\* | 文字列 | コネクションより取得したGoogleSpreadsheetのプロバイダーID | gsheet_1234abcd |
+| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet_1234abcd |
 
 ### アウトプット
 
@@ -29,7 +29,7 @@ CreateSpreadsheetは、スプレッドシートを新たに作成するアクシ
 +create_spreadsheet_1:
   action>: CreateSpreadsheet
   title: test
-  provider: gsheet_8e2eb635cb50f9f86eb7
+  provider: gsheet_********************
 # => {
 #   "spreadsheetId": "1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro",
 #   "properties": {
@@ -77,7 +77,7 @@ CreateSpreadsheetは、スプレッドシートを新たに作成するアクシ
 #     }
 #   ],
 #   "spreadsheetUrl": "https://docs.google.com/a/tutorial.co.jp/spreadsheets/d/1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro/edit",
-#   "provider": "gsheet_8e2eb635cb50f9f86eb7"
+#   "provider": "gsheet_********************"
 # }
 ```
 
@@ -93,7 +93,7 @@ GetSpreadsheetは、GoogleSpreadsheetオブジェクトを取得するアクシ�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| provider\* | 文字列 | コネクションより取得したGoogleSpreadsheetのプロバイダーID | gsheet_1234abcd |
+| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet_1234abcd |
 | spreadsheet_id\* | 文字列 | 使用するスプレッドシートID | 1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro |
 
 ### アウトプット
@@ -107,7 +107,7 @@ GetSpreadsheetは、GoogleSpreadsheetオブジェクトを取得するアクシ�
 ```yaml
 +get_spreadsheet_1:
   action>: GetSpreadsheet
-  provider: gsheet_8e2eb635cb50f9f86eb7
+  provider: gsheet_********************
   spreadsheet_id: 1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro
 # => {
 #   "spreadsheetId": "1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro",
@@ -156,7 +156,7 @@ GetSpreadsheetは、GoogleSpreadsheetオブジェクトを取得するアクシ�
 #     }
 #   ],
 #   "spreadsheetUrl": "https://docs.google.com/a/tutorial.co.jp/spreadsheets/d/1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro/edit",
-#   "provider": "gsheet_8e2eb635cb50f9f86eb7"
+#   "provider": "gsheet_********************"
 # }
 ```
 
@@ -293,7 +293,7 @@ UpdateCellsは、セルの値を更新するアクションです。セルの値
 #     }
 #   ],
 #   "spreadsheetUrl": "https://docs.google.com/a/tutorial.co.jp/spreadsheets/d/1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro/edit",
-#   "provider": "gsheet_8e2eb635cb50f9f86eb7"
+#   "provider": "gsheet_********************"
 # }
 ```
 
@@ -301,7 +301,9 @@ UpdateCellsは、セルの値を更新するアクションです。セルの値
 
 ### 概要
 
-AppendValuesは、指定した範囲の最後の行に値を追加するアクションです。シート名を指定した場合、シートの最後の空行に値を追加します。
+AppendValuesは、指定した範囲の表の末尾に値を追加するアクションです。シート名を指定した場合、シートの最後の空行に値を追加します。  
+詳しい仕様に関しましては、Google Sheets API のドキュメントをご参照ください。  
+https://developers.google.com/sheets/api/guides/values?hl=ja#appending_values
 
 ### パラメーター
 
@@ -310,7 +312,7 @@ AppendValuesは、指定した範囲の最後の行に値を追加するアク�
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get_spreadsheet_1 |
-| range\* | 文字列 | 指定するセルの範囲(A1記法)。指定した範囲の最後の行に値が追加されます。  | シート1 |
+| range\* | 文字列 | 指定する表の範囲(A1記法)  | シート1 |
 | values\* | 配列 |  追加する値　| [['A1','B1'],['A2', 'B2']]
 
 ### アウトプット
@@ -325,7 +327,7 @@ AppendValuesは、指定した範囲の最後の行に値を追加するアク�
 +append_values_1:
   action>: AppendValues
   spreadsheet: +get_spreadsheet_1
-  range: 'シート1'
+  range: '!A2:D5'
   values: [["E森","23","34","45"]]
 # => {
 #   "spreadsheetId": "1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro",
@@ -374,7 +376,7 @@ AppendValuesは、指定した範囲の最後の行に値を追加するアク�
 #     }
 #   ],
 #   "spreadsheetUrl": "https://docs.google.com/a/tutorial.co.jp/spreadsheets/d/1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro/edit",
-#   "provider": "gsheet_8e2eb635cb50f9f86eb7"
+#   "provider": "gsheet_********************"
 # }
 ```
 
