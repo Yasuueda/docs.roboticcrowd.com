@@ -40,3 +40,44 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
 
 ## GmailGet
 
+### 概要
+
+GmailGetは、Gmailのアカウントからメールを取得するアクションです。この機能により、利用者は、自分のGmailアカウントからメールを取得することができます。
+
+### パラメーター
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| query\* | 文字列 | 検索条件 | from:john.doe@example.com<br>(検索条件の詳細については[こちら](https://support.google.com/mail/answer/7190?hl=ja)参照してください。) |
+| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail_1234aaa |
+| limit | 文字列 | 取得するメールの上限値 | 10(default) |
+
+### アウトプット
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| List | 配列 | 取得したメールオブジェクトの配列 | ※使用例のアウトプット参照 |
+
+### 使用例
+
+```yaml
++gmail_get_1:
+  action>: GmailGet
+  query: 'from:chan-shiro'
+  provider: gmail_********************
+  limit: 10
+  #=> [
+#   {
+#     "id": "1234567890aaaaaa",
+#     "subject": "ミーティング日程調整",
+#     "to": "minna <minna@gmail.com>",
+#     "cc": "aaa <aaa@gmail.com>",
+#     "from": "bbb <bbb@gmail.com>",
+#     "date": "2019-03-14T10:41:09.000Z",
+#     "body": "ミーティングはXX月XX日XX時開始にしましょう。"
+#   },...
+# ]
+```
+
