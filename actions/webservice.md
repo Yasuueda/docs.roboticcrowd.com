@@ -15,8 +15,8 @@ HTTPRequestは、HTTPリクエストを送るアクションです。JSONレス�
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | url\* | 文字列 | URL | https://www.googleapis.com/books/v1/volumes |
-| params\* | オブジェクト | クエリパラメーター | {"q": "ロボット"} |
-| method\* | セレクト | リクエストメソッド | GET、POST、PUT、PATCH、DELETE |
+| params | オブジェクト | クエリパラメーター | {"q": "ロボット"} |
+| method | セレクト | リクエストメソッド | GET、POST、PUT、PATCH、DELETE |
 | headers | オブジェクト | ヘッダー | {"Content-Type": "application/json"} |
 | multipart | 真理値 | マルチパート | false(default) |
 | file_input_name | 文字列 | アップロードするファイルのパラメーター名。マルチパートのときのみ有効になります。 | +get_file_1 |
