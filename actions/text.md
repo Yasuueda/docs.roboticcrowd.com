@@ -232,13 +232,17 @@ GetTimeアクションは、指定した日付のフォーマットとタイム�
 フォーマットとタイムゾーンをテキストで入力する際のフォーマット例。
 
 ```text
-フォーマット(format)*2019年4月1日
+フォーマット(format)
+*アクション実行が2019年4月1日の場合。
+
 ・YYYY-MM-DD(2019-04-01)
 ・YYYY-MM-DD HH:mm(2019-04-01 09:00)*午前9時の場合
 ・YYYY/MM/DD(2019/04/01)
 ・MMMM Do YYYY(April 1st 2019)
 
-タイムゾーン(timezone)*地域/都市
+タイムゾーン(timezone)
+*地域/都市の形式で入力。
+
 ・Asia/Tokyo
 ・Europe/London
 ・America/New_York
