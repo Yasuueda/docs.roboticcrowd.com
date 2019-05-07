@@ -586,7 +586,7 @@ WaitForDownloadは、ダウンロード中のファイルのダウンロード�
 
 ### 概要
 
-GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を取得します。
+GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を取得します。ファイル名、または、ファイルの最終修正時刻で並び替えができます。
 
 ### パラメーター <a id="paramt-9"></a>
 
@@ -594,13 +594,14 @@ GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| - | - | - | - |
+| order | セレクト | 並び替えの順序。ASCだと、若い値が先にきます。DESCだと、その逆に並びます。 | ASC |
+| sort_by | セレクト | 並び替えのキー。FILENAMEだと、ファイル名の辞書順、CREATEDだと、ファイルの修正時刻順になります。順序をDESC、キーをCREATEDにすることで、一番初めの値が、最新のダウンロードファイルになります。 | FILENAME |
 
 ### アウトプット <a id="autoputto-9"></a>
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| List | 配列 | ファイルの一覧を返します。 | \["/path/to/downloads/1.png", "/path/to/downloads2.png"\] |
+| List | 配列 | ファイルの一覧を返します。 | \["/path/to/downloads/1.png", "/path/to/downloads/2.png"\] |
 
 ### 使用例 <a id="shi-yong-li-9"></a>
 
@@ -609,6 +610,8 @@ GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を�
 ```yaml
 +get_download_files_1:
   action>: GetDownloadFiles
+  order: ASC
+  sort_by: FILENAME
 ```
 
 ## ScrapePage
