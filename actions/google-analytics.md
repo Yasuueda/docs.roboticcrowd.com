@@ -52,56 +52,63 @@ action>: GetGAReport
   endDate: 2019-04-30
   metrics: ['ga:users', 'ga:sessions']
   dimensions: ['ga:browser']
+  filters: ['ga:browser==Chrome']
 # => {
-#     "reports": [
-#         {
-#             "columnHeader": {
-#                 "metricHeader": {
-#                     "metricHeaderEntries": [
-#                         {
-#                             "name": "ga:users",
-#                             "type": "INTEGER"
-#                         }
-#                     ]
-#                 }
-#             },
-#             "data": {
-#                 "isDataGolden": true,
-#                 "maximums": [
-#                     {
-#                         "values": [
-#                             "98"
-#                         ]
-#                     }
-#                 ],
-#                 "minimums": [
-#                     {
-#                         "values": [
-#                             "98"
-#                         ]
-#                     }
-#                 ],
-#                 "rowCount": 1,
-#                 "rows": [
-#                     {
-#                         "metrics": [
-#                             {
-#                                 "values": [
-#                                     "98"
-#                                 ]
-#                             }
-#                         ]
-#                     }
-#                 ],
-#                 "totals": [
-#                     {
-#                         "values": [
-#                             "98"
-#                         ]
-#                     }
-#                 ]
+#   "reports": [
+#     {
+#       "columnHeader": {
+#         "dimensions": [
+#           "ga:browser"
+#         ],
+#         "metricHeader": {
+#           "metricHeaderEntries": [
+#             {
+#               "name": "ga:sessions",
+#               "type": "INTEGER"
 #             }
+#           ]
 #         }
-#     ]
+#       },
+#       "data": {
+#         "rows": [
+#           {
+#             "dimensions": [
+#               "Chrome"
+#             ],
+#             "metrics": [
+#               {
+#                 "values": [
+#                   "4660"
+#                 ]
+#               }
+#             ]
+#           }
+#         ],
+#         "totals": [
+#           {
+#             "values": [
+#               "4660"
+#             ]
+#           }
+#         ],
+#         "rowCount": 1,
+#         "minimums": [
+#           {
+#             "values": [
+#               "4660"
+#             ]
+#           }
+#         ],
+#         "maximums": [
+#           {
+#             "values": [
+#               "4660"
+#             ]
+#           }
+#         ],
+#         "isDataGolden": true
+#       }
+#     }
+#   ]
 # }
 ```
