@@ -36,8 +36,6 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
   provider: 'gmail_e7502c3b8b8147410ce2'
 ```
 
-## 
-
 ## GmailGet
 
 ### 概要
@@ -50,9 +48,9 @@ GmailGetは、Gmailのアカウントからメールを取得するアクショ�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| query\* | 文字列 | 検索条件 | from:john.doe@example.com<br>(検索条件の詳細については[こちら](https://support.google.com/mail/answer/7190?hl=ja)参照してください。) |
-| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail_1234aaa |
-| limit | 文字列 | 取得するメールの上限値 | 10(default) |
+| query\* | 文字列 | 検索条件 | from:john.doe@example.com \(検索条件の詳細については[こちら](https://support.google.com/mail/answer/7190?hl=ja)参照してください。\) |
+| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_1234aaa |
+| limit | 文字列 | 取得するメールの上限値 | 10\(default\) |
 
 ### アウトプット
 

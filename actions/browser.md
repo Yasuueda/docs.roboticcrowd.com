@@ -18,7 +18,7 @@ OpenBrowserは、指定したURLのDOM要素のレンダリングが開始され
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| url\* | 文字列 | 最初に開くウェブサイトのURL | https://yahoo.co.jp |
+| url\* | 文字列 | 最初に開くウェブサイトのURL | [https://yahoo.co.jp](https://yahoo.co.jp) |
 | lang | 文字列 | ブラウザの言語設定、ISO 639言語コード。 | en \(default\) |
 | timeZone | 文字列 | ブラウザの場所設定、タイムゾーン。 | Etc/GMT \(default\) |
 | userAgent | 文字列 | ブラウザのユーザーエージェント設定。 | HeadlessChrome \(default\) |
@@ -215,7 +215,7 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
 | browser\* | 文字列 | ブラウザの接続先 | +open\_browser\_1 |
 | selector\* | 文字列 | 操作対象のCSSセレクタ | \#submitBtn |
 | text\* | 文字列 | 入力する文字列 | ミーアキャット |
-| clearValue | 真理値 | trueの時、すでに入力されている値を消去します。falseの時、追記します。 | false \(default\)  |
+| clearValue | 真理値 | trueの時、すでに入力されている値を消去します。falseの時、追記します。 | false \(default\) |
 | ignoreError | 真理値 | CSSセレクタが見つからないなどのエラーが発生しても次のタスクへ進む。 | true \(default\) |
 | delay | 整数 | 1文字ずつ入力する際のタイプ遅延（ms）。例えば、'abcd' と入力する際に20セットされていると、a \(20ms\) b \(20ms\) c \(20ms\) d と入力するので、60ms以上時間がかかる。 | 0 \(default\) |
 | waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
@@ -242,8 +242,6 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
   delay: 5
 ```
 
-
-
 ## SelectOption
 
 ### 概要
@@ -264,7 +262,7 @@ TypeTextは、ブラウザの内の指定の要素に文字を入力します。
 | waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
 | waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
 
-\(\*1\) どちらか必須 
+\(\*1\) どちらか必須
 
 ### アウトプット
 
@@ -485,7 +483,7 @@ SubmitFormは、クリックやキーの送信ではなく、プログラム的�
 
 TakeScreenshotは、ブラウザの画面を画像として保存するアクションです。画像ファイルのパスをアウトプットします。
 
-### パラメーター <a id="paramt-9"></a>
+### パラメーター  <a id="paramt-9"></a>
 
 \*は、必須パラメーター
 
@@ -497,13 +495,13 @@ TakeScreenshotは、ブラウザの画面を画像として保存するアクシ
 | waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
 | waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
 
-### アウトプット <a id="autoputto-9"></a>
+### アウトプット  <a id="autoputto-9"></a>
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | Image | 文字列 | 撮影した画面のpngファイルのパス。 | /tmp/fb4edcb2/screenshots/1.png |
 
-### 使用例 <a id="shi-yong-li-9"></a>
+### 使用例  <a id="shi-yong-li-9"></a>
 
 ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。高解像度モードで全ページを撮影する。
 
@@ -523,7 +521,7 @@ TakeElementShotは、ブラウザに表示されている一部の要素のみ�
 
 このアクションは、30秒間要素の出現をまちます。30秒たっても要素が出現しない場合、エラーとなります。
 
-### パラメーター <a id="paramt-9"></a>
+### パラメーター  <a id="paramt-9"></a>
 
 \*は、必須パラメーター
 
@@ -535,13 +533,13 @@ TakeElementShotは、ブラウザに表示されている一部の要素のみ�
 | waitBefore | 整数 | 実行前待機時間（ms） | 100 \(default\) |
 | waitAfter | 整数 | 実行後待機時間（ms） | 100 \(default\) |
 
-### アウトプット <a id="autoputto-9"></a>
+### アウトプット  <a id="autoputto-9"></a>
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | Image | 文字列 | 撮影した画面のpngファイルのパス。 | /tmp/fb4edcb2/screenshots/1.png |
 
-### 使用例 <a id="shi-yong-li-9"></a>
+### 使用例  <a id="shi-yong-li-9"></a>
 
 ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。高解像度モードで画像要素のみ撮影する。
 
@@ -559,7 +557,7 @@ TakeElementShotは、ブラウザに表示されている一部の要素のみ�
 
 WaitForDownloadは、ダウンロード中のファイルのダウンロードが完了するのをまちます。このアクションが呼び出されると、ダウンロードファイルが以前のアクションの状態よりも、一つ増えるまでまちます、ダウンロード中のファイル（.crdownloadで終わるファイル）があれば完了するまでまちます。最大で3分まちます。
 
-### パラメーター <a id="paramt-9"></a>
+### パラメーター  <a id="paramt-9"></a>
 
 \*は、必須パラメーター
 
@@ -567,13 +565,13 @@ WaitForDownloadは、ダウンロード中のファイルのダウンロード�
 | :--- | :--- | :--- | :--- |
 | timeout | 整数 | 最大の待ち時間（ms）。 | 180000 \(default\) |
 
-### アウトプット <a id="autoputto-9"></a>
+### アウトプット  <a id="autoputto-9"></a>
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | Boolean | 真理値 | タイムアウトせずに完了するとtrue、タイムアウトで完了した場合は、falseになります。 | true |
 
-### 使用例 <a id="shi-yong-li-9"></a>
+### 使用例  <a id="shi-yong-li-9"></a>
 
 ブラウザの接続先は、OpenBrowserアクションのアウトプットを再利用する。
 
@@ -588,22 +586,22 @@ WaitForDownloadは、ダウンロード中のファイルのダウンロード�
 
 GetDownloadFilesは、ダウンロードフォルダ内のファイル一覧を取得します。ファイル名、または、ファイルの最終修正時刻で並び替えができます。
 
-### パラメーター <a id="paramt-9"></a>
+### パラメーター  <a id="paramt-9"></a>
 
 \*は、必須パラメーター
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | order | セレクト | 並び替えの順序。ASCだと、若い値が先にきます。DESCだと、その逆に並びます。 | ASC |
-| sort_by | セレクト | 並び替えのキー。FILENAMEだと、ファイル名の辞書順、CREATEDだと、ファイルの修正時刻順になります。順序をDESC、キーをCREATEDにすることで、一番初めの値が、最新のダウンロードファイルになります。 | FILENAME |
+| sort\_by | セレクト | 並び替えのキー。FILENAMEだと、ファイル名の辞書順、CREATEDだと、ファイルの修正時刻順になります。順序をDESC、キーをCREATEDにすることで、一番初めの値が、最新のダウンロードファイルになります。 | FILENAME |
 
-### アウトプット <a id="autoputto-9"></a>
+### アウトプット  <a id="autoputto-9"></a>
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | List | 配列 | ファイルの一覧を返します。 | \["/path/to/downloads/1.png", "/path/to/downloads/2.png"\] |
 
-### 使用例 <a id="shi-yong-li-9"></a>
+### 使用例  <a id="shi-yong-li-9"></a>
 
 ダウンロードフォルダのファイル一覧を取得します。
 
@@ -688,7 +686,7 @@ ExtractDataFromTableは、ウェブサイトにあるテーブル（表）から
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-|  Array | 配列 | 取得したテーブルデータ | ※アウトプット例を参照 |
+| Array | 配列 | 取得したテーブルデータ | ※アウトプット例を参照 |
 
 ### 使用例
 
@@ -792,7 +790,7 @@ multiple: false のときは、selectorsに指定されたデータの場所を�
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-|  Anything | 配列 | 取得した情報の一覧 | ※使用例の各アウトプット参照 |
+| Anything | 配列 | 取得した情報の一覧 | ※使用例の各アウトプット参照 |
 
 ### 使用例
 
@@ -875,7 +873,7 @@ GetURLは、現在表示しているウェブサイトのURLを取得します�
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| Text  | 文字列 | 取得したURL | "https://roboticcrowd.com/" |
+| Text | 文字列 | 取得したURL | "[https://roboticcrowd.com/](https://roboticcrowd.com/)" |
 
 ### 使用例
 
@@ -918,7 +916,7 @@ GetAttributeは、セレクタで指定した要素の属性値を取得しま�
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| Text  | 文字列 | 取得した属性値 | "/images/logo.svg" |
+| Text | 文字列 | 取得した属性値 | "/images/logo.svg" |
 
 ### 使用例
 
