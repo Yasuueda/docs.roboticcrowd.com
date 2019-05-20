@@ -14,13 +14,13 @@ GetGAReportは、レポートを取得するアクションです。パラメー
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| viewID\* | 文字列 | ユーザーID | 11110000 |
+| viewId\* | 文字列 | ユーザーID | 12345678 |
 | startDate\* | 文字列 | リクエスト期間の開始日付 | 2019-04-01 |
 | endDate\* | 文字列 | リクエスト期間の終了日付 | 2019-04-30 |
 | metrics\* | 文字列 | 指標(定量化されたデータ) | ga:users, ga:sessions |
 | dimensions | 文字列 | ディメンション(データの属性) | ga:browser |
 | filter | 文字列　| リクエストで返されるデータを制限するディメンションまたは指標のフィルタ | ga:browser==Chrome |
-| provider\* | 文字列　| google analyticsからデータを取得するのに必要なプロバイダーID | ganalytics\_e7502c3b8b8147410ce2 |
+| provider\* | 文字列　| google analyticsからデータを取得するのに必要なプロバイダーID | ga\_e7502c3b8b8147410ce2 |
 
 #### 補足: 入力フォーマット
 
@@ -34,7 +34,7 @@ dimensions: ga:userType
 filters   : ga:userType==New Visitor
 
 -②任意の市町村区における平均セッション時間を計測したい場合
-viewID    : 11110000
+viewId    : 11110000
 metrics   : ga:sessions
 dimensions: ga:city
 filters : ga:city==cityName
@@ -52,13 +52,13 @@ https://developers.google.com/analytics/devguides/reporting/core/dimsmets
 ### 使用例
 ```yaml
 action>: GetGAReport
-  viewID: "11110000"
+  viewId: "12345678"
   startDate: "2019-04-01"
   endDate: "2019-04-30"
   metrics: ['ga:users', 'ga:sessions']
   dimensions: ['ga:browser']
   filters: ['ga:browser==Chrome']
-  provider: ['ganalytics\_e7502c3b8b8147410ce2']
+  provider: ['ga\_e7502c3b8b8147410ce2']
 # => {
 #   "reports": [
 #     {
