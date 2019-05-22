@@ -33,3 +33,7 @@
 
 * [セッションの検索](search/session.md)
 
+## Integrations
+
+* [Slack](integrations/slack.md)
+
