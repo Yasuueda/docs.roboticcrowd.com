@@ -14,12 +14,12 @@ HTTPRequestは、HTTPリクエストを送るアクションです。JSONレス�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| url\* | 文字列 | URL | https://www.googleapis.com/books/v1/volumes |
+| url\* | 文字列 | URL | [https://www.googleapis.com/books/v1/volumes](https://www.googleapis.com/books/v1/volumes) |
 | params | オブジェクト | クエリパラメーター | {"q": "ロボット"} |
 | method | セレクト | リクエストメソッド | GET、POST、PUT、PATCH、DELETE |
 | headers | オブジェクト | ヘッダー | {"Content-Type": "application/json"} |
-| multipart | 真理値 | マルチパート | false(default) |
-| file_input_name | 文字列 | アップロードするファイルのパラメーター名。マルチパートのときのみ有効になります。 | +get_file_1 |
+| multipart | 真理値 | マルチパート | false\(default\) |
+| file\_input\_name | 文字列 | アップロードするファイルのパラメーター名。マルチパートのときのみ有効になります。 | +get\_file\_1 |
 
 ### アウトプット
 
@@ -28,6 +28,7 @@ HTTPRequestは、HTTPリクエストを送るアクションです。JSONレス�
 | JSON | オブジェクト | JSONレスポンス | ※使用例のアウトプット参照 |
 
 ### 使用例
+
 Google Books APIsから本のデータを取得する。
 
 ```yaml
@@ -138,13 +139,13 @@ DownloadFileは、URLにあるファイルをダウンロードするアクシ�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| url\* | 文字列 | ダウンロードするファイルのURL | https://images.unsplash.com/photo-1522518961115-07c922089dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80 |
+| url\* | 文字列 | ダウンロードするファイルのURL | [https://images.unsplash.com/photo-1522518961115-07c922089dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80](https://images.unsplash.com/photo-1522518961115-07c922089dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80) |
 
 ### アウトプット
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| File | ファイル | ダウンロードしたファイル | /tmp/ac44342d-d956-4818-b3ee-e3d4990b06c8/web_files/photo-1522518961115-07c922089dd4 |
+| File | ファイル | ダウンロードしたファイル | /tmp/ac44342d-d956-4818-b3ee-e3d4990b06c8/web\_files/photo-1522518961115-07c922089dd4 |
 
 ### 使用例
 
@@ -154,3 +155,4 @@ DownloadFileは、URLにあるファイルをダウンロードするアクシ�
   url: 'https://images.unsplash.com/photo-1522518961115-07c922089dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80'
   # => "/tmp/ac44342d-d956-4818-b3ee-e3d4990b06c8/web_files/photo-1522518961115-07c922089dd4"
 ```
+

@@ -15,7 +15,7 @@ CreateSpreadsheetは、スプレッドシートを新たに作成するアクシ
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | title\* | 文字列 | スプレッドシートのタイトル | test |
-| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet_1234abcd |
+| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet\_1234abcd |
 
 ### アウトプット
 
@@ -93,8 +93,8 @@ GetSpreadsheetは、GoogleSpreadsheetオブジェクトを取得するアクシ�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet_1234abcd |
-| spreadsheet_id\* | 文字列 | 使用するスプレッドシートID | 1zTG_XHbCnC5a5BD5k5WWxdbcYpnEDv4_FfdAPaE33ro |
+| provider\* | 文字列 | 利用するコネクション（GoogleSpreadsheet）のプロバイダーID | gsheet\_1234abcd |
+| spreadsheet\_id\* | 文字列 | 使用するスプレッドシートID | 1zTG\_XHbCnC5a5BD5k5WWxdbcYpnEDv4\_FfdAPaE33ro |
 
 ### アウトプット
 
@@ -172,14 +172,14 @@ GetCellsは、セルの値を取得するアクションです。
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get_spreadsheet_1 |
-| range\* | 文字列 | 取得する値のセルの範囲(A1記法) | !A1:D4 |
+| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get\_spreadsheet\_1 |
+| range\* | 文字列 | 取得する値のセルの範囲\(A1記法\) | !A1:D4 |
 
 ### アウトプット
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| Array | 配列 | 取得したセルの値を[行][列]の二次元配列で返します。 | [['A1','B1'],['A2', 'B2']] |
+| Array | 配列 | 取得したセルの値を\[行\]\[列\]の二次元配列で返します。 | \[\['A1','B1'\],\['A2', 'B2'\]\] |
 
 ### 使用例
 
@@ -228,9 +228,9 @@ UpdateCellsは、セルの値を更新するアクションです。セルの値
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get_spreadsheet_1 |
-| range\* | 文字列 | 更新するセルの範囲(A1記法) | !A1:D4 |
-| values\* | 配列 |  書き込む値　| [['A1','B1'],['A2', 'B2']]
+| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get\_spreadsheet\_1 |
+| range\* | 文字列 | 更新するセルの範囲\(A1記法\) | !A1:D4 |
+| values\* | 配列 | 書き込む値 | \[\['A1','B1'\],\['A2', 'B2'\]\] |
 
 ### アウトプット
 
@@ -303,7 +303,7 @@ UpdateCellsは、セルの値を更新するアクションです。セルの値
 
 AppendValuesは、指定した範囲の表の末尾に値を追加するアクションです。シート名を指定した場合、シートの最後の空行に値を追加します。  
 詳しい仕様に関しましては、Google Sheets API のドキュメントをご参照ください。  
-https://developers.google.com/sheets/api/guides/values?hl=ja#appending_values
+[https://developers.google.com/sheets/api/guides/values?hl=ja\#appending\_values](https://developers.google.com/sheets/api/guides/values?hl=ja#appending_values)
 
 ### パラメーター
 
@@ -311,9 +311,9 @@ https://developers.google.com/sheets/api/guides/values?hl=ja#appending_values
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get_spreadsheet_1 |
-| range\* | 文字列 | 指定する表の範囲(A1記法)  | シート1 |
-| values\* | 配列 |  追加する値　| [['A1','B1'],['A2', 'B2']]
+| spreadsheet\* | スプレッドシート、文字列、オブジェクト | 対象のスプレッドシート | +get\_spreadsheet\_1 |
+| range\* | 文字列 | 指定する表の範囲\(A1記法\) | シート1 |
+| values\* | 配列 | 追加する値 | \[\['A1','B1'\],\['A2', 'B2'\]\] |
 
 ### アウトプット
 
