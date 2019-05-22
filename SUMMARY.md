@@ -23,7 +23,7 @@
 * [Excel](actions/excel.md)
 * [Google Analytics](actions/google-analytics.md)
 * [Google Spreadsheet](actions/google-spreadsheet.md)
-* [Gmail](actions/gmail.md)
+* [Message](actions/message.md)
 * [Storage](actions/storage.md)
 * [WebService](actions/webservice.md)
 * [HumanIntelligence](actions/humanintelligence.md)
