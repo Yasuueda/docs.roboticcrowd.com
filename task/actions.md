@@ -58,6 +58,8 @@
   * WriteCSV
   * ReadCSV
   * DeleteRange
+* Google Analytics
+  * GetReport
 * Google Spreadsheet
   * CreateSpreadsheet
   * GetSpreadsheet
