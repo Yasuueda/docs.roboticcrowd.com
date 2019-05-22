@@ -1,61 +1,29 @@
-# Slack
-
-## SendSlackMessage
+# Slack APPの設定
 
 ### 概要
 
-SendSlackMessageは、SlackのAPIによりメッセージを送信するアクションです。この機能により、利用者は、自分のSlackアカウントから任意のチャンネルに、メッセージを送信することができます。
+Robotic Crowdでは、Slackと連携させる事により、Slackを用いたアクションでロボット(bot)に自動でメッセージを送信させたり、エラーをSlackに送信させる事が出来ます。
+実際に、Robotic CrowdでSlack関連の機能を使用する為には、Slack APIでアプリを作成し、いくつか設定をしておく必要があります。
 
-### アクション実行前の準備
-```
-このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。
+### アプリの作成
 
--アプリを作成
- Slack APIからアプリを作成します。その際に、通知したワークスペースとアプリの名前を指定します。
+Slack API(https://api.slack.com/apps) からアプリを作成します。その際に、使用したいワークスペースとアプリの名前を指定します。
+App Nameには好きな名前を、Development Slack Workspaceには通知したいワークスペースを入力してください。
 
--API認証の追加
-　アプリの管理画面のBasic Information にある features & functionality を設定します。Incoming Webhooks をONにしてください。
-　次に、OAuth & Permissions のメニューからスコープ(使用できるAPIの機能)を設定します。今回は、Select Permission Scopes のところで chat:write:bot を追加します。
-　このスコープを追加することにより、ワークスペースにbotがメッセージを送信する事を許可します。
+![](../.gitbook/assets/createapp.png)
 
--アプリのインストール
-　アプリ管理画面の左カラムのメニューから Settings > Install App を選択し、ワークスペースにアプリをインストールします。
-```
+### Webhooksの設定
 
-### パラメーター
+アプリの管理画面のBasic Information にある features & functionality を設定します。Incoming Webhooks をONにしてください。
 
-\*は、必須パラメーター
+![](../.gitbook/assets/features.png)
 
-| 名前 | 型 | 概要 | 例 |
-| :--- | :--- | :--- | :--- |
-| provider\* | 文字列 | 送信に使うSlack ConnectionのProvider ID | slack\_******************** |
-| channel\* | 文字列 | メッセージの送信先チャンネル | #general |
-| text\* | 文字列 | 送信するメッセージ | Hello,World! |
+### Scopeの設定
 
-### アウトプット
+スコープとは、APIで使用出来る機能を指定するものです。OAuth & Permissions のメニューからスコープ(使用できるAPIの機能)を設定します。今回は、Select Permission Scopes のところで chat:write:bot を追加します。このスコープを追加することにより、ワークスペースにbotがメッセージを送信する事を許可します。
 
-| タイプ | 型 | 概要 | 例 |
-| :--- | :--- | :--- | :--- |
-| JSON | オブジェクト | JSONレスポンス | ※使用例のアウトプット参照 |
+![](../.gitbook/assets/scope.png)
 
-### 使用例
+### アプリのインストール
 
-```yaml
-+send_slack_message:
-  action>: SendSlackMessage
-  provider: slack_********************
-  channel: '#general'
-  text: 'Hello, World!'
-# 　{
-#     "ok": true,
-#     "channel": "CJHNQRXS6",
-#     "ts": "1558414377.000400",
-#     "message": {
-#         "bot_id": "BJV6A9L48",
-#         "type": "message",
-#         "text": "\u3053\u3093\u306b\u3061\u306f",
-#         "user": "UJV4T94GM",
-#         "ts": "1558414377.000400"
-#     }
-# 　}
-```
+アプリ管理画面の左カラムのメニューから Settings > Install App を選択し、ワークスペースにアプリをインストールします。
