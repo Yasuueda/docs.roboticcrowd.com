@@ -2,28 +2,30 @@
 
 ### 概要
 
-Robotic Crowdでは、Slackと連携させる事により、Slackを用いたアクションでロボット(bot)に自動でメッセージを送信させたり、エラーをSlackに送信させる事が出来ます。
-実際に、Robotic CrowdでSlack関連の機能を使用する為には、Slack APIでアプリを作成し、いくつか設定をしておく必要があります。
+Robotic Crowdでは、Slackと連携させる事により、Slackを用いたアクションでロボット(bot)に自動でメッセージを送信させたり、エラーをSlackに通知させる事が出来ます。
+実際に、Robotic CrowdでSlack関連の機能を使用する為には、任意のSlackワークスペースにアプリをインテグレーションしておく必要があります。
 
-### アプリの作成
+### アプリのインテグレーション
 
-Slack API(https://api.slack.com/apps) からアプリを作成します。その際に、使用したいワークスペースとアプリの名前を指定します。
-App Nameには好きな名前を、Development Slack Workspaceには通知したいワークスペースを入力してください。
+アプリをインストールする方法は、Slack APPディレクトリからアプリをインストールする方法と、Slack内でアプリを追加する方法の2パターンあります。
 
-![](../.gitbook/assets/createapp.png)
+### APPディレクトリからインストールする方法
 
-### Webhooksの設定
+Slack APPディレクトリで、「Robotic Crowd」を検索。下の画像のようなページが表示されるので、「インストール」をクリック。
 
-アプリの管理画面のBasic Information にある features & functionality を設定します。Incoming Webhooks をONにしてください。
+```
+画像追加予定(Robotic Crowdのアプリの詳細ページの画面)
+```
 
-![](../.gitbook/assets/features.png)
+インストールをクリックすると、下の画像のようなページが表紙されるので、「インテグレーションを追加」をクリック。
 
-### Scopeの設定
+```
+画像追加予定(Robotic Crowdのアプリをインテグレーションする画面)
+```
 
-スコープとは、APIで使用出来る機能を指定するものです。OAuth & Permissions のメニューからスコープ(使用できるAPIの機能)を設定します。今回は、Select Permission Scopes のところで chat:write:bot を追加します。このスコープを追加することにより、ワークスペースにbotがメッセージを送信する事を許可します。
+### Slackワークスペースからインストールする方法
 
-![](../.gitbook/assets/scope.png)
+Slackにログインしたら、左下のAppの隣のプラスボタンをクリック。下の画像のようなメニューが表示されるので、その中から、「Appディレクトリを表示」を選択。
+Appディレクトリに移動した後は、上の項目を参照してください。
 
-### アプリのインストール
-
-アプリ管理画面の左カラムのメニューから Settings > Install App を選択し、ワークスペースにアプリをインストールします。
+![](../.gitbook/assets/cb5ra-134c0.svg)
