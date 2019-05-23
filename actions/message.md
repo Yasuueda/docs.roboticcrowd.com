@@ -101,8 +101,6 @@ URLをはる！！！
 | provider\* | 文字列 | 送信に使うSlack ConnectionのProvider ID | slack\_******************** |
 | channel\* | 文字列 | メッセージの送信先チャンネル | #general |
 | text\* | 文字列 | 送信するメッセージ | Hello,World! |
-| username | 文字列 | botの名前 | ロボット |
-| icon-url | 文字列 | botのアイコン画像のURL | http://lorempixel.com/48/48 |
 
 ### アウトプット
 
@@ -116,38 +114,7 @@ URLをはる！！！
 +send_slack_message:
   action>: SendSlackMessage
   provider: slack_********************
-  channel: '#general'
+  channel: '#test'
   text: 'Hello, World!'
-  username: 'ロボット'
-  icon-url: 'http://lorempixel.com/48/48'
-# => {
-#   "ok": true,
-#   "channel": "CJJ0FHDTM",
-#   "ts": "1558516359.001700",
-#   "message": {
-#     "type": "message",
-#     "subtype": "bot_message",
-#     "text": "Hello, World!",
-#     "ts": "1558516359.001700",
-#     "username": "ロボット",
-#     "icons": {
-#       "image_48": "https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2019-05-22/642198247300_48.png"
-#     },
-#     "bot_id": "BJVC9SCN9"
-#   },
-#   "response_metadata": {
-#     "scopes": [
-#       "identify",
-#       "bot",
-#       "incoming-webhook",
-#       "users:read",
-#       "users.profile:read",
-#       "chat:write:user",
-#       "chat:write:bot"
-#     ],
-#     "acceptedScopes": [
-#       "chat:write:bot"
-#     ]
-#   }
-# }
+
 ```
