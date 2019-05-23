@@ -7,6 +7,7 @@
 * [ロボットを動かしてみる](overview/run-robot.md)
 * [実行要求とキュー](overview/session-and-queue.md)
 * [ワークフロー](overview/workflow.md)
+* [スケジュール](overview/sukejru.md)
 
 ## Task
 
@@ -43,4 +44,18 @@
 * [Gmail](integrations/gmail.md)
 * [OneDrive](integrations/onedrive.md)
 * [Slack](integrations/slack.md)
+
+## ユーザーと権限
+
+* [プロジェクト](yzto/purojekuto.md)
+* [組織](yzto/undefined.md)
+* [組織ユーザー](yzto/yz.md)
+* [コラボレーター](yzto/korabort.md)
+
+## SSO
+
+* [設定方法](sso/ding-fang-fa.md)
+* [OneLogin](sso/onelogin.md)
+* [Okta](sso/okta.md)
+* [GSuite](sso/gsuite.md)
 
