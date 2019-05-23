@@ -35,5 +35,12 @@
 
 ## Integrations
 
+* [box](integrations/box.md)
+* [Dropbox](integrations/dropbox.md)
+* [Google Analytics](integrations/google-analytics.md)
+* [Google Drive](integrations/google-drive.md)
+* [Google Spreadsheet](integrations/google-spreadsheet.md)
+* [Gmail](integrations/gmail.md)
+* [OneDrive](integrations/onedrive.md)
 * [Slack](integrations/slack.md)
 
