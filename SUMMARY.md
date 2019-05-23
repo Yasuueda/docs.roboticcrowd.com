@@ -1,6 +1,6 @@
 # Table of contents
 
-* [アクションドキュメント](README.md)
+* [ドキュメント](README.md)
 
 ## Overview
 

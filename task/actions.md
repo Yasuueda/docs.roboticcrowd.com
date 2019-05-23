@@ -80,5 +80,3 @@
 * HumanIntelligence
   * GetHumanInput
 
-
-
