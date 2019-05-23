@@ -21,7 +21,7 @@
 * [Data](actions/data.md)
 * [ComputerVision](actions/computervision.md)
 * [Excel](actions/excel.md)
-* [Google Analytics](actions/google-analytics.md)
+* [Marketing](actions/marketing.md)
 * [Google Spreadsheet](actions/google-spreadsheet.md)
 * [Message](actions/message.md)
 * [Storage](actions/storage.md)
