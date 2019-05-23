@@ -90,7 +90,6 @@ SendSlackMessageは、SlackのAPIによりメッセージを送信するアク�
 このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。
 詳しくは、こちら（[Slack APPの設定](../integrations/slack.md)）の記事をご覧ください。
 
-
 ### パラメーター
 
 \*は、必須パラメーター
