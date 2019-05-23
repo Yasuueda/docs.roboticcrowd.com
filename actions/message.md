@@ -86,11 +86,10 @@ GmailGetは、Gmailのアカウントからメールを取得するアクショ�
 SendSlackMessageは、SlackのAPIによりメッセージを送信するアクションです。この機能により、任意のチャンネルに、botからメッセージを送信することができます。
 
 ### アクション実行前の準備
-```
+
 このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。
-詳しくは、こちらの記事をご覧ください。
-URLをはる！！！
-```
+詳しくは、こちら（[Slack APPの設定](../integrations/slack.md)）の記事をご覧ください。
+
 
 ### パラメーター
 
@@ -114,7 +113,29 @@ URLをはる！！！
 +send_slack_message:
   action>: SendSlackMessage
   provider: slack_********************
-  channel: '#test'
+  channel: '#general'
   text: 'Hello, World!'
-
+#   {
+#   "ok": true,
+#   "channel": "CJJ0FHDTM",
+#   "ts": "1558588475.001100",
+#   "message": {
+#     "type": "message",
+#     "subtype": "bot_message",
+#     "text": "Hello, World!",
+#     "ts": "1558588475.001100",
+#     "username": "tutorial-test",
+#     "bot_id": "BJVC9SCN9"
+#   },
+#   "response_metadata": {
+#     "scopes": [
+#       "bot",
+#       "users.profile:read",
+#       "chat:write:bot"
+#     ],
+#     "acceptedScopes": [
+#       "chat:write:bot"
+#     ]
+#   }
+# }
 ```
