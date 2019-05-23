@@ -88,7 +88,7 @@ SendSlackMessageは、SlackのAPIによりメッセージを送信するアク�
 ### アクション実行前の準備
 
 このアクションを実行する為に、Robotic Crowdのアプリをワークスペースにインテグレーションしておく必要があります。
-詳しくは、こちら（[Slack APPの設定](../integrations/slack.md)）の記事をご覧ください。
+詳しくは、こちら（[Robotic Crowdアプリの設定](../integrations/slack.md)）の記事をご覧ください。
 
 ### パラメーター
 
