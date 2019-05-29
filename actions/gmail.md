@@ -6,7 +6,7 @@ Gmailを使ってメールを送受信します。
 
 ### 概要
 
-GmailSendは、GmailのAPIによりメールを送信します。この機能により、利用者は、自分のGmailアカウントからメールそ送信することができます。
+GmailSendは、GmailのAPIによりメールを送信します。この機能により、利用者は、自分のGmailアカウントからメールを送信することができます。
 
 ### パラメーター
 
@@ -14,10 +14,11 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
+| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_e7502c3b8b8147410ce2 |
 | to\* | 文字列 | メールの送信先アドレス | john.doe@example.com |
 | subject\* | 文字列 | 送信するメールの件名 | Hello! John! |
 | body\* | 文字列 | 送信するメールの本文 | Hi John, I'm very happy to send this mail to you. |
-| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_e7502c3b8b8147410ce2 |
+| attachment\* | 文字列 | 添付ファイル | アクション内で取得したファイルのパスを入力(使用例のアウトプット参照) |
 
 ### アウトプット
 
@@ -33,6 +34,7 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
   to: 'john.doe@example.com'
   subject: 'Hello! John!'
   body: 'Hi John, I\'m very happy to send this mail to you.'
+  attachment: '/Users/john/robotic-workflow/tmp/fe74887f-64b3-472e-aeda-90662ed1ab19/gdrive_204374d03b504b0efc7f/sample.pdf'
   provider: 'gmail_e7502c3b8b8147410ce2'
 ```
 
