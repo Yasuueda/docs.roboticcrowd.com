@@ -4,9 +4,7 @@ description: >-
   のガイドをすべて完了した方、あるいは、技術に親しみがあり技術的な情報に興味のある方を想定しています。
 ---
 
-# アクションドキュメント
+# ドキュメント
 
-主にYamlでの設定の方法について説明しています。Visual Modeの使いかたは、[https://intercom.help/roboticcrowd](https://intercom.help/roboticcrowd) のGuide記事の方を参照してください。
-
-ロボットの機能追加は、Visual ModeよりもEditor Modeの方が先に更新されます。
+主にYamlでの設定の方法について説明しています。ドラッグ&ドロップで作成する場合は、適宜読み替えてください。各種設定項目やアクションの動作については、共通です。
 
