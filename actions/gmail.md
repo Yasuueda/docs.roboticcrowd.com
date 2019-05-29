@@ -18,7 +18,7 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
 | to\* | 文字列 | メールの送信先アドレス | john.doe@example.com |
 | subject\* | 文字列 | 送信するメールの件名 | Hello! John! |
 | body\* | 文字列 | 送信するメールの本文 | Hi John, I'm very happy to send this mail to you. |
-| attachments | 配列・文字列 | 添付ファイル | アクション内で取得したファイルのパスを入力(使用例のアウトプット参照) |
+| attachments | 配列・文字列 | 添付ファイル | アクション内で取得したファイルパスを入力(使用例のアウトプット参照) |
 
 ### アウトプット
 
