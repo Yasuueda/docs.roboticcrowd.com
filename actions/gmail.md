@@ -24,7 +24,7 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| Boolean | 真理値 | APIのリクエストが、200で返却されたときにtrue, 404で返却された時にfalse | true or false |
+| Boolean | 真理値 | APIのリクエストが、成功した時にtrue, 失敗した時にfalse | true or false |
 
 ### 使用例
 
