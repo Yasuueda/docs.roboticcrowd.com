@@ -36,4 +36,7 @@
 ## Integrations
 
 * [Slack](integrations/slack.md)
+* [Slack(Internal-Integration)](integrations/slack-internal-integration.md)
+
+
 
