@@ -14,26 +14,28 @@ GmailSendは、GmailのAPIによりメールを送信します。この機能に
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
+| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_e7502c3b8b8147410ce2 |
 | to\* | 文字列 | メールの送信先アドレス | john.doe@example.com |
 | subject\* | 文字列 | 送信するメールの件名 | Hello! John! |
 | body\* | 文字列 | 送信するメールの本文 | Hi John, I'm very happy to send this mail to you. |
-| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_e7502c3b8b8147410ce2 |
+| attachments | 配列・文字列 | 添付ファイル | アクション内で取得したファイルのアウトプットを入力(使用例のアウトプット参照) |
 
 ### アウトプット
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| Boolean | 真理値 | APIのリクエストが、200で返却されたときにtrue | true |
+| Boolean | 真理値 | APIのリクエストが、成功した時にtrue, 失敗した時にfalse | true or false |
 
 ### 使用例
 
 ```yaml
 +gmail_send:
   action>: GmailSend
+  provider: 'gmail_e7502c3b8b8147410ce2'
   to: 'john.doe@example.com'
   subject: 'Hello! John!'
   body: 'Hi John, I\'m very happy to send this mail to you.'
-  provider: 'gmail_e7502c3b8b8147410ce2'
+  attachments: '+get_file_1'
 ```
 
 ## GmailGet
