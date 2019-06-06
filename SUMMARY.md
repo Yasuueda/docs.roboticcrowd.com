@@ -44,7 +44,6 @@
 * [Gmail](integrations/gmail.md)
 * [OneDrive](integrations/onedrive.md)
 * [Slack](integrations/slack.md)
-* [Slack(Internal-Integration)](integrations/slack-internal-integration.md)
 
 
 

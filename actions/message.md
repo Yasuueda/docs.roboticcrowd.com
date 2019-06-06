@@ -83,12 +83,12 @@ GmailGetは、Gmailのアカウントからメールを取得するアクショ�
 
 ### 概要
 
-SendSlackMessageは、SlackのAPIによりメッセージを送信するアクションです。この機能により、任意のチャンネルに、botからメッセージを送信することができます。
+SendSlackMessageは、Slackのアプリからメッセージを送信するアクションです。この機能により、任意のチャンネルに事前に作成したアプリから自動でメッセージの送信が可能です。
 
 ### アクション実行前の準備
 
-このアクションを実行する為に、Robotic Crowdのアプリをワークスペースにインテグレーションしておく必要があります。
-詳しくは、こちら（[Robotic Crowdアプリの設定](../integrations/slack.md)）の記事をご覧ください。
+このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。
+詳しくは、こちら（[Slack APIアプリの設定](../integrations/slack.md)）の記事をご覧ください。
 
 ### パラメーター
 
@@ -129,7 +129,7 @@ SendSlackMessageは、SlackのAPIによりメッセージを送信するアク�
 #   "response_metadata": {
 #     "scopes": [
 #       "bot",
-#       "users.profile:read",
+#       "team:read",
 #       "chat:write:bot"
 #     ],
 #     "acceptedScopes": [
