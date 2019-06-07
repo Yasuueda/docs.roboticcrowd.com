@@ -30,7 +30,7 @@ Slack関連の機能を使用する為に、事前にSlack APIでアプリを作
 ### Redirect URLsの設定
 
 次に、「OAuth & Permissions」の項目をクリックし、「Redirect URLs」の箇所に下記のURLを入力してください。
-https://roboticcrowd.com/connections/slack/callback
+https://console.roboticcrowd.com/connections/slack/callback
 
 ![](../.gitbook/assets/slack_redirect.png)
 
