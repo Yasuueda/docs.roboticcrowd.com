@@ -5,30 +5,41 @@
 Robotic Crowdでは、Slackと連携させる事により、アクション内でロボット(bot)からの自動メッセージ送信や、エラー通知が可能になります。
 Slack関連の機能を使用する為に、事前にSlack APIでアプリを作成し幾つか設定をしておく必要があります。
 
-### アプリの作成
+### Slack APPの作成
 
-こちらから、Slack APP作成します。→　https://api.slack.com/
+最初に、次のリンクからSlack APPを作成します。https://api.slack.com/
 
-右上の「your app」をクリックすると、アプリ作成画面に遷移するので、「create your app」という項目からアプリの名前と使用したいワークスペースを選択してください。
+右上の「Your Apps」をクリックすると、アプリ作成画面に遷移します。
 
-![](../.gitbook/assets/slack1.png)
+![](../.gitbook/assets/slack_your_apps.png)
 
-### クライアントIDとクライアントシークレットの取得
+アプリ作成画面から「Create New App」をクリックします。
 
-アプリを作成すると、クライアントIDとクライアントシークレットが発行されます。このクライアントIDとクライアントシークレットを、Robotic-CrowdでSlackコネクションを追加する際に使用します。
+![](../.gitbook/assets/slack_create_new_apps.png)
 
-![](../.gitbook/assets/slack2.png)
+表示されたダイアログの「App Name」にアプリの名前、「Development Slack Workspace」に、使用したいワークスペースを選択してください。
 
-### リダイレクトURLの設定
+![](../.gitbook/assets/slack_dialog.png)
 
-次に、OAuth & Permissionsの項目をクリックし、Redirect URLsの箇所に下記のURLを入力してください。
-http://localhost:3000/connections/slack/callback
+### Client IDとClient Secretの取得
 
-![](../.gitbook/assets/slack3.png)
+アプリを作成すると「Basic Information」が表示され、その中に、「App Credentials」と言うセクションがあります。その中の、「Client ID」と「Client Secret」を Robotic CrowdでSlackコネクションを追加する際に使用します。
 
-## RoboticCrowdでのコネクション連携
+![](../.gitbook/assets/slack_client.png)
 
-Slack APIでの設定が完了した後は、RoboticCrowdでコネクション連携を行います。コネクション追加画面でSlackを選択するとダイアログが表示されるので、
-設定したクライアントIDとクライアントシークレットを入力します。
+### Redirect URLsの設定
 
-![](../.gitbook/assets/slack4.png)
+次に、「OAuth & Permissions」の項目をクリックし、「Redirect URLs」の箇所に下記のURLを入力してください。
+https://roboticcrowd.com/connections/slack/callback
+
+![](../.gitbook/assets/slack_redirect.png)
+
+## Robotic Crowdでのコネクション連携
+
+Slack APIでの設定が完了した後は、Robotic Crowdでコネクション連携を行います。コネクション追加画面でSlackを選択します。
+
+![](../.gitbook/assets/slack_logo.png)
+
+表示されるダイアログに、設定した「Client ID」と「Client Secret」を入力します。
+
+![](../.gitbook/assets/slack_connection.png)
