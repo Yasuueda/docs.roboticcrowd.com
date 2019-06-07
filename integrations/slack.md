@@ -48,6 +48,6 @@ Slack APIでの設定が完了した後は、Robotic Crowdでコネクション�
 
 ![](../.gitbook/assets/slack_8.png)
 
-連携が成功するとRobotic Crowdのコネクションに、アプリが追加されました。これでワークフロー内で、Slackに関係するアクションが使用可能になりました。
+連携が成功すると Robotic Crowd のコネクションにアプリが追加されます。これでワークフロー内で、Slackに関係するアクションが使用可能になります。
 
 ![](../.gitbook/assets/slack_9.png)
