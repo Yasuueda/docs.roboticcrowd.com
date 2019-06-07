@@ -66,7 +66,7 @@
   * GetCells
   * UpdateCells
   * AppendValues
-* Gmail
+* Message
   * GmailSend
   * GmailGet
 * Storage

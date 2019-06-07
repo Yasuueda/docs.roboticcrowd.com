@@ -24,7 +24,7 @@
 * [Excel](actions/excel.md)
 * [Marketing](actions/marketing.md)
 * [Google Spreadsheet](actions/google-spreadsheet.md)
-* [Gmail](actions/gmail.md)
+* [Message](actions/message.md)
 * [Storage](actions/storage.md)
 * [WebService](actions/webservice.md)
 * [HumanIntelligence](actions/humanintelligence.md)
@@ -45,16 +45,18 @@
 * [OneDrive](integrations/onedrive.md)
 * [Slack](integrations/slack.md)
 
+
+
 ## ユーザーと権限
 
-* [プロジェクト](yzto/purojekuto.md)
-* [組織](yzto/undefined.md)
-* [組織ユーザー](yzto/yz.md)
-* [コラボレーター](yzto/korabort.md)
+* [プロジェクト](user-roles/project.md)
+* [組織](user-roles/organization.md)
+* [組織ユーザー](user-roles/organization-user.md)
+* [コラボレーター](user-roles/collaborator.md)
 
 ## SSO
 
-* [設定方法](sso/ding-fang-fa.md)
+* [設定方法](sso/setup.md)
 * [OneLogin](sso/onelogin.md)
 * [Okta](sso/okta.md)
 * [GSuite](sso/gsuite.md)
