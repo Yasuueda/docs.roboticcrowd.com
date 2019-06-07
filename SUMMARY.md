@@ -47,14 +47,14 @@
 
 ## ユーザーと権限
 
-* [プロジェクト](yzto/purojekuto.md)
-* [組織](yzto/undefined.md)
-* [組織ユーザー](yzto/yz.md)
-* [コラボレーター](yzto/korabort.md)
+* [プロジェクト](user-roles/project.md)
+* [組織](user-roles/organization.md)
+* [組織ユーザー](user-roles/organization-user.md)
+* [コラボレーター](user-roles/collaborator.md)
 
 ## SSO
 
-* [設定方法](sso/ding-fang-fa.md)
+* [設定方法](sso/setup.md)
 * [OneLogin](sso/onelogin.md)
 * [Okta](sso/okta.md)
 * [GSuite](sso/gsuite.md)
