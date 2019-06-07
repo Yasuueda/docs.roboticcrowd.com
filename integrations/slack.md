@@ -43,3 +43,11 @@ Slack APIでの設定が完了した後は、Robotic Crowdでコネクション�
 表示されるダイアログに、設定した「Client ID」と「Client Secret」を入力します。
 
 ![](../.gitbook/assets/slack_7.png)
+
+「Client ID」と「Client Secret」を入力すると、 Slack APPの認証画面が表示されるので、インストールをクリックしてください。
+
+![](../.gitbook/assets/slack_8.png)
+
+連携が成功するとRobotic Crowdのコネクションに、アプリが追加されました。これでワークフロー内で、Slackに関係するアクションが使用可能になりました。
+
+![](../.gitbook/assets/slack_9.png)
