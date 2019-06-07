@@ -42,4 +42,4 @@ Slack APIでの設定が完了した後は、Robotic Crowdでコネクション�
 
 表示されるダイアログに、設定した「Client ID」と「Client Secret」を入力します。
 
-![](../.gitbook/assets/slack_connection.png)
+![](../.gitbook/assets/slack_7.png)
