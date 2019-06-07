@@ -24,7 +24,7 @@
 * [Excel](actions/excel.md)
 * [Marketing](actions/marketing.md)
 * [Google Spreadsheet](actions/google-spreadsheet.md)
-* [Gmail](actions/gmail.md)
+* [Message](actions/message.md)
 * [Storage](actions/storage.md)
 * [WebService](actions/webservice.md)
 * [HumanIntelligence](actions/humanintelligence.md)
@@ -44,6 +44,8 @@
 * [Gmail](integrations/gmail.md)
 * [OneDrive](integrations/onedrive.md)
 * [Slack](integrations/slack.md)
+
+
 
 ## ユーザーと権限
 
