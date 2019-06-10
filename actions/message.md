@@ -48,9 +48,9 @@ GmailGetは、Gmailのアカウントからメールを取得するアクショ�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| query\* | 文字列 | 検索条件 | from:john.doe@example.com<br>(検索条件の詳細については[こちら](https://support.google.com/mail/answer/7190?hl=ja)参照してください。) |
-| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail_1234aaa |
-| limit | 文字列 | 取得するメールの上限値 | 10(default) |
+| query\* | 文字列 | 検索条件 | from:john.doe@example.com \(検索条件の詳細については[こちら](https://support.google.com/mail/answer/7190?hl=ja)参照してください。\) |
+| provider\* | 文字列 | 送信に使うGmail ConnectionのProvider ID | gmail\_1234aaa |
+| limit | 文字列 | 取得するメールの上限値 | 10\(default\) |
 
 ### アウトプット
 
@@ -87,8 +87,7 @@ SendSlackMessageは、Slackのアプリからメッセージを送信するア�
 
 ### アクション実行前の準備
 
-このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。
-詳しくは、こちら（[Slack APIアプリの設定](../integrations/slack.md)）の記事をご覧ください。
+このアクションを実行する為に、事前にSlack APIでアプリを作成しておく必要があります。 詳しくは、こちら（[Slack APIアプリの設定](../integrations/slack.md)）の記事をご覧ください。
 
 ### パラメーター
 
@@ -96,8 +95,8 @@ SendSlackMessageは、Slackのアプリからメッセージを送信するア�
 
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-| provider\* | 文字列 | 送信に使うSlack ConnectionのProvider ID | slack\_******************** |
-| channel\* | 文字列 | メッセージの送信先チャンネル | #general |
+| provider\* | 文字列 | 送信に使うSlack ConnectionのProvider ID | slack\__**\*\***_ |
+| channel\* | 文字列 | メッセージの送信先チャンネル | \#general |
 | text\* | 文字列 | 送信するメッセージ | Hello,World! |
 
 ### アウトプット
@@ -138,3 +137,4 @@ SendSlackMessageは、Slackのアプリからメッセージを送信するア�
 #   }
 # }
 ```
+
