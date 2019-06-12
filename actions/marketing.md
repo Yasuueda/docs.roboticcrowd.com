@@ -160,3 +160,64 @@ action>: GetGAReport
 # }
 ```
 
+## GetSearchAnalytics
+
+### 概要
+
+GetSearchAnalyticsは、Google Search Consoleで管理しているプロパティの検索パフォーマンスデータを取得するアクションです。返却されるレスポンスはデフォルトで最大1000行です。
+
+### パラメーター
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| provider\* | 文字列 | 利用するコネクション（Search Console）のプロバイダーID | searchconsole\_e7502c3b8b8147410ce2 |
+| siteUrl\* | 文字列 | Google Search Consoleに登録しているプロパティのURLまたはドメイン名 | roboticcrowd.com |
+| startDate\* | 文字列 | リクエスト期間の開始日付 | 2019-06-01 |
+| endDate\* | 文字列 | リクエスト期間の終了日付 | 2019-06-07 |
+| dimensions | 配列 | 取得するデータの種類 | ['query', 'page'] |
+
+### アウトプット
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| JSON | オブジェクト | JSONレスポンス | ※使用例のアウトプット参照 |
+
+### 使用例
+
+```yaml
+action>: GetSearchAnalytics
+  provider: searchconsole_********************
+  siteUrl: 'roboticcrowd.com'
+  startDate: '2019-06-01'
+  endDate: '2019-06-07'
+  dimensions: ['query', 'page']
+# => {
+#  "rows": [
+#   {
+#    "keys": [
+#     "robotic crowd",
+#     "https://roboticcrowd.com/"
+#    ],
+#    "clicks": 109.0,
+#    "impressions": 181.0,
+#    "ctr": 0.6022099447513812,
+#    "position": 1.0055248618784531
+#   },
+#   {
+#    "keys": [
+#     "ロボティッククラウド",
+#     "https://roboticcrowd.com/"
+#    ],
+#    "clicks": 32.0,
+#    "impressions": 44.0,
+#    "ctr": 0.7272727272727273,
+#    "position": 1.0
+#   },
+#  ],
+#  ...
+#  "responseAggregationType": "byPage"
+# }
+
+```
