@@ -160,3 +160,97 @@ action>: GetGAReport
 # }
 ```
 
+## GetAdReport
+
+### 概要
+
+GetAdReportアクションは、Google広告からレポートを取得するアクションです。広告キャンペーン全体の掲載結果データのレポートを取得したり、広告が表示されるきっかけとなった検索語句などに絞ってデータを取得する事が出来ます。レポートを取得する為に、Google広告アカウントの「お客様ID」が必要になります。「お客様ID」は下記の場所に記載されています。
+取得したいデータの指定は、「Google Ads Query Language」という形式で入力する必要があります。セクション毎に取得したいデータを設定する事で様々な組み合わせのデータが取得可能です。
+
+![](../.gitbook/assets/customerID.png)
+
+### パラメーター
+
+\*は、必須パラメーター
+
+| 名前 | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+| customer_id\* | 文字列 | Google Adsからデータを取得するのに必要なお客様ID | 123456789 |
+| query\* | 文字列 | 取得したいレポートを「Google Ads Query Language」で入力します。 | ※使用例の入力例を参照 |
+
+#### 補足: Google Ads Query Languageパラメーターの入力フォーマット
+
+```
+-SELECT(必須)
+取得したいデータ項目を入力してください。このパラメーターでは、Segment/Metrics/Customerなどフィールド毎に取得したいデータ項目を指定します。
+設定可能な全てのフィールドから、取得したいデータを入力し全てにリクエストを送る事も可能です。
+
+(例)
+Resource fields
+-campaign.name
+-campaign.status
+
+Segment fields
+-ad_group.name
+
+Metrics fields
+-metrics.impressions
+
+-FROM(必須)
+SELECTで指定したデータを取得するリソースを選択します。一つのリソースしか選択する事が出来ません。
+
+(例)
+campaign
+customer
+ad_group
+
+-WHERE(オプション)
+条件を指定する事で取得したいデータをフィルタリングする事が可能です。複数の条件を指定する事も可能です。
+
+(例)
+segments.device = MOBILE
+segments.date DURING LAST_30_DAYS
+metrics.impressions > 0
+
+-ORDER_BY(オプション)
+返却されるデータの順番を、指定した条件で並び替える事が出来ます。取得したデータ毎に条件を指定し、各データ毎に表示する順番を指定する事が出来ます。
+
+(例)
+metrics.clicks ASC
+metrics.impressions DESC
+
+-LIMIT(オプション)
+APIから返却されるデータの数を、数値で直接指定する事が出来ます。
+
+(例)
+LIMIT 100
+
+-PARAMETERS(オプション)
+この項目では管理しているGoogle広告のメタパラメータを指定する事が出来ます。
+現在APIで使用できるメタパラメータは「include_drafts」の一つだけとなっており、デフォルトでは「False」になっています。
+管理しているGoogle広告アカウントに下書き状態の広告が存在する場合、「True」に設定する事で下書き状態の広告に関するデータを取得する事が出来ます。
+
+(例)
+include_drafts=true
+```
+
+このアクションで使用できるパラメーターに関する詳細情報は下記のURLを参考にしてください。
+[https://developers.google.com/google-ads/api/docs/query/structure](https://developers.google.com/google-ads/api/docs/query/structure)
+
+### アウトプット
+
+| タイプ | 型 | 概要 | 例 |
+| :--- | :--- | :--- | :--- |
+|  |  |  | ※使用例のアウトプット参照 |
+
+### 使用例
+
+```yaml
+action>: GetAdReport
+  customer_id: 123456789
+  query:  SELECT campaign.name, campaign.status, segments.device, metrics.impressions, metrics.clicks,
+                 metrics.ctr, metrics.average_cpc, metrics.cost_micros
+          FROM campaign
+          WHERE segments.date DURING LAST_30_DAYS
+
+```
