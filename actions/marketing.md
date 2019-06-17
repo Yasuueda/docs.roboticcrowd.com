@@ -179,7 +179,7 @@ GetAdReportアクションは、Google広告からレポートを取得するア
 | 名前 | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
 | customer_id\* | 文字列 | Google Adsからデータを取得するのに必要なお客様ID | 123456789 |
-| manager_id | 文字列 | MCCアカウントでアクションを利用する場合、このパラメーターにMCCアカウントのお客様IDを入力します。 | 123456789 |
+| manager_id | 文字列 | MCCアカウントでアクションを利用する場合、このパラメーターにMCCアカウントのお客様IDを入力します。 | 123456780 |
 | query\* | 文字列 | 取得したいレポートを「Google Ads Query Language」で入力します。 | ※使用例の入力例を参照 |
 
 #### 補足: Google Ads Query Languageパラメーターの入力フォーマット
@@ -252,6 +252,7 @@ include_drafts=true
 ```yaml
 action>: GetAdReport
   customer_id: 123456789
+  manager_id: 123456780
   query:  SELECT campaign.name, campaign.status, segments.device, metrics.impressions, metrics.clicks,
                  metrics.ctr, metrics.average_cpc, metrics.cost_micros
           FROM campaign
