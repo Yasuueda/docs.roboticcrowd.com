@@ -1,13 +1,12 @@
-# Slack APPの設定
+# Slack
 
 ### 概要
 
-Robotic Crowdでは、Slackと連携させる事により、アクション内でロボット(bot)からの自動メッセージ送信や、エラー通知が可能になります。
-Slack関連の機能を使用する為に、事前にSlack APIでアプリを作成し幾つか設定をしておく必要があります。
+Robotic Crowdでは、Slackと連携させる事により、アクション内でロボット\(bot\)からの自動メッセージ送信や、エラー通知が可能になります。 Slack関連の機能を使用する為に、事前にSlack APIでアプリを作成し幾つか設定をしておく必要があります。
 
 ### Slack APPの作成
 
-最初に、次のリンクからSlack APPを作成します。https://api.slack.com/
+最初に、次のリンクからSlack APPを作成します。[https://api.slack.com/](https://api.slack.com/)
 
 右上の「Your Apps」をクリックすると、アプリ作成画面に遷移します。
 
@@ -29,8 +28,7 @@ Slack関連の機能を使用する為に、事前にSlack APIでアプリを作
 
 ### Redirect URLsの設定
 
-次に、「OAuth & Permissions」の項目をクリックし、「Redirect URLs」の箇所に下記のURLを入力してください。
-https://console.roboticcrowd.com/connections/slack/callback
+次に、「OAuth & Permissions」の項目をクリックし、「Redirect URLs」の箇所に下記のURLを入力してください。 [https://console.roboticcrowd.com/connections/slack/callback](https://console.roboticcrowd.com/connections/slack/callback)
 
 ![](../.gitbook/assets/slack_5.png)
 
@@ -51,3 +49,4 @@ Slack APIでの設定が完了した後は、Robotic Crowdでコネクション�
 連携が成功すると Robotic Crowd のコネクションにアプリが追加されます。これでワークフロー内で、Slackに関係するアクションが使用可能になります。
 
 ![](../.gitbook/assets/slack_9.png)
+
