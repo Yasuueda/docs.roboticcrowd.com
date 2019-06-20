@@ -305,23 +305,69 @@ include_drafts=true
 ```
 
 このアクションで使用できるパラメーターに関する詳細情報は下記のURLを参考にしてください。
-[https://developers.google.com/google-ads/api/docs/query/structure](https://developers.google.com/google-ads/api/docs/query/structure)
+[https://developers.google.com/google-ads/api/docs/query/interactive-gaql-builder](https://developers.google.com/google-ads/api/docs/query/interactive-gaql-builder)
 
 ### アウトプット
 
 | タイプ | 型 | 概要 | 例 |
 | :--- | :--- | :--- | :--- |
-|  |  |  | ※使用例のアウトプット参照 |
+| JSON | オブジェクト | JSONレスポンス | ※使用例のアウトプット参照 |
 
 ### 使用例
 
 ```yaml
 action>: GetGoogleAdsReport
   customer_id: 123456789
-  manager_id: 123456780
-  query:  SELECT campaign.name, campaign.status, segments.device, metrics.impressions, metrics.clicks,
-                 metrics.ctr, metrics.average_cpc, metrics.cost_micros
-          FROM campaign
-          WHERE segments.date DURING LAST_30_DAYS
-
+  manager_id:  123456780
+  query:  SELECT  campaign.id, campaign.name, ad_group.id, ad_group.name, ad_group_criterion.criterion_id, ad_group_criterion.keyword.text,
+                  ad_group_criterion.keyword.match_type, metrics.impressions, metrics.engagements,  metrics.clicks, metrics.cost_micros
+          FROM    keyword_view
+# {
+#   "resultsList": [
+#     {
+#       "campaign": {
+#         "resourceName": "customers/123456789/campaigns/2037742724",
+#         "id": 2037742724,
+#         "name": "テストキャンペーン"
+#       },
+#       "adGroup": {
+#         "resourceName": "customers/123456789/adGroups/72421289499",
+#         "id": 72421289499,
+#         "name": "テスト広告グループ"
+#       },
+#       "adGroupCriterion": {
+#         "resourceName": "customers/123456789/adGroupCriteria/72421289499~12073940",
+#         "criterionId": 12073940,
+#         "keyword": {
+#           "text": "テスト",
+#           "matchType": 4
+#         }
+#       },
+#       "metrics": {
+#         "impressions": 0,
+#         "engagements": 0,
+#         "clicks": 0,
+#         "costMicros": 0
+#       }
+#     }
+#   ],
+#   "nextPageToken": "",
+#   "totalResultsCount": 1,
+#   "fieldMask": {
+#     "pathsList": [
+#       "campaign.id",
+#       "campaign.name",
+#       "ad_group.id",
+#       "ad_group.name",
+#       "ad_group_criterion.criterion_id",
+#       "ad_group_criterion.keyword.text",
+#       "ad_group_criterion.keyword.match_type",
+#       "metrics.impressions",
+#       "metrics.active_view_viewability",
+#       "metrics.engagements",
+#       "metrics.clicks",
+#       "metrics.cost_micros"
+#     ]
+#   }
+# }
 ```
