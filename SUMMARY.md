@@ -1,6 +1,7 @@
 # Table of contents
 
 * [ドキュメント](README.md)
+* [Release Note](release-note.md)
 
 ## Overview
 
