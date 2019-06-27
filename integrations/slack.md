@@ -73,7 +73,7 @@ Slack APIでの設定が完了した後は、Robotic Crowdでコネクション�
 
 ![](../.gitbook/assets/slack_7.png)
 
-「Client ID」と「Client Secret」を入力すると、次の画面が表示されるので、インストールをクリックしてください。
+「Client ID」と「Client Secret」を入力すると、Slack APPの認証画面が表示されるのでインストールをクリックしてください。
 
 ![](../.gitbook/assets/slack_8.png)
 
