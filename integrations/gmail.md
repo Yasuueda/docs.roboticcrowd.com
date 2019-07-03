@@ -2,9 +2,9 @@
 
 ### 概要
 
-Robotic Crowdでは、Gmail APIと連携する事で、自分のアカウントから自動でメールを送信したり、任意のメール取得が可能になります。
+Robotic Crowdでは、Gmail APIと連携する事で、ユーザー様の代わりに自動でメールを送信する「GmailSendアクション」と任意のメールを取得する「GmailGetアクション」が利用可能になります。
 
-###  Gmail APIとのコネクション作成
+###  Gmailとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -18,20 +18,14 @@ Robotic Crowdでは、Gmail APIと連携する事で、自分のアカウント�
 
 ![](../.gitbook/assets/connection_list.png)
 
-「Gmail」をクリックすると、ユーザー様が持つGmailのアカウント選択画面が表示されます。コネクションに利用するアカウントを選択してください。
+「Gmail」をクリックすると、ユーザー様が持つGoogleアカウント選択画面が表示されます。コネクションに利用するアカウントを選択してください。
 
-![](../.gitbook/assets/gmail_account.png)
+![](../.gitbook/assets/google_account.png)
 
-アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。「許可」をクリックしてください。
+アカウントを選択すると「Robotic Crowd」はユーザー様の代わりに「ユーザーのアカウントからメールメッセージおよびラベルを表示/検索する権限」と「ユーザーとしてメールを送信する権限」を要求します。上記の二つのアクセス権限を「Robotic Crowd」に与える事に、同意した上で「許可」をクリックしてください。
 
 ![](../.gitbook/assets/robotic_crowd_integration.png)
 
-「許可」をクリックすると、Robotic Crowdのコネクション画面に戻り、「Gmail」とのコネクションが作成されます。これでGmailSendアクション(Gメールを送信)とGmailGetアクション(Gメールを取得)が利用可能になります。
+「許可」をクリックすると、Robotic Crowdのコネクション画面にリダイレクトされます。「Gmail」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_gmail.png)
-
-
-
-
-
-
