@@ -2,7 +2,7 @@
 
 ### 概要
 
-Robotic Crowdでは、Slackと連携させる事により、アクション内でロボット　\(bot\) からの自動メッセージ送信機能　(SendSlackMessage) が使用可能になります。 Slackアクションを使用する為に、事前にSlack APIでアプリを作成し幾つか設定をしておく必要があります。
+Robotic Crowdでは、Slackと連携させる事により、アクション内でロボット \(bot\) からの自動メッセージ送信機能 \(SendSlackMessage\) が使用可能になります。 Slackアクションを使用する為に、事前にSlack APIでアプリを作成し幾つか設定をしておく必要があります。
 
 **注意：Robotic Crowd では、ユーザー様のワークスペース内の Slack アプリとして連携します。アプリの作成と Robotic Crowd へのインストールの前にワークスペース管理者に連携する旨を連絡し承諾を得ておいてください。**
 
@@ -32,7 +32,7 @@ Robotic Crowdでは、Slackと連携させる事により、アクション内�
 
 次に、「OAuth & Permissions」の項目をクリックし、「Redirect URLs」の箇所に下記のURLを入力してください。
 
-```
+```text
 https://console.roboticcrowd.com/connections/slack/callback
 ```
 

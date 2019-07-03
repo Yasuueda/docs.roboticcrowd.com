@@ -40,7 +40,7 @@ OneLogin側で、以下の項目を設定します。
 
 ![Square Icon](../.gitbook/assets/rclogocat_squ_tcolor_1024.png)
 
-![&#x753B;&#x9762;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;](../.gitbook/assets/sukurnshotto2019-05-2474337.png)
+![&#x30A2;&#x30D7;&#x30EA;&#x60C5;&#x5831;&#x306E;&#x8A2D;&#x5B9A;](../.gitbook/assets/screen_shot_2019-07-03_at_14_57_47%20%281%29.png)
 
 ### ACSとACS URL Validatorを登録
 
@@ -48,26 +48,28 @@ Configurationタブをクリックして設定画面を開きます。ここで�
 
 | 項目 | 値 |
 | :--- | :--- |
-| ACS | https://console.roboticcrowd.com/users/auth/saml?domain=\[yourdomain\] |
-| ACS URL Validator | ^https:\/\/console\.roboticcrowd\.com\/users\/auth\/saml?domain=\[yourdomain\]$ |
+| Audience | https://console.roboticcrowd.com/ |
+| Recipient | https://console.roboticcrowd.com/users/auth/saml/callback?domain=tutorial.co.jp |
+| ACS | https://console.roboticcrowd.com/users/auth/saml/callback?domain=tutorial.co.jp |
+| ACS URL Validator | ^https:\/\/console\.roboticcrowd\.com\/users\/auth\/saml\?domain=tutorial\.co\.jp$ |
 
-![](../.gitbook/assets/sukurnshotto2019-05-2480349.png)
+![&#x5404;&#x7A2E;&#x8A2D;&#x5B9A;&#x9805;&#x76EE;](../.gitbook/assets/screen_shot_2019-07-03_at_14_57_54-2.png)
 
-値は、営業担当より連絡いたします。設定してSaveしてください。
+値は、営業担当より連絡いたします。tutorial.co.jpというドメインのところを、貴社組織ドメインに読み替えて設定してSaveしてください。
 
 ### 証明書とログインURLのコピー
 
 この状態でSSOタブを開くと、各種値を取得することができます。まずは、SAML 2.0 Endpointをコピーしてください。
 
-![](../.gitbook/assets/sukurnshotto2019-05-2480453%20%281%29.png)
+![](../.gitbook/assets/screen_shot_2019-07-03_at_14_58_07.png)
 
 続いて、X.509 Certificateというところの下の "View Details" をクリックして証明書の詳細を開いてください。
 
-![](../.gitbook/assets/sukurnshotto2019-05-2480453.png)
+![](../.gitbook/assets/screen_shot_2019-07-03_at_14_58_07%20%281%29.png)
 
 クリック後に表示される画面から、証明書をコピーしてください。
 
-![](../.gitbook/assets/sukurnshotto2019-05-2480531.png)
+![](../.gitbook/assets/screen_shot_2019-07-03_at_14_58_21.png)
 
 上で取得した以下の情報を弊社担当者までおしらせください。データは、テキストで大丈夫です。
 
