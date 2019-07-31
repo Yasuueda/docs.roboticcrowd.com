@@ -55,8 +55,8 @@
 
 ## ユーザーと権限
 
-* [プロジェクト](yzto/project.md)
-* [組織](yzto/organization.md)
-* [組織ユーザー](yzto/organization-user.md)
-* [コラボレーター](yzto/collaborator.md)
+* [プロジェクト](manage/project.md)
+* [組織](manage/organization.md)
+* [組織ユーザー](manage/organization-user.md)
+* [コラボレーター](manage/collaborator.md)
 
