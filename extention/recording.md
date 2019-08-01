@@ -24,16 +24,16 @@ Robotic Crowd Agentを使って、ウェブサイトを操作し、その操作�
 
 ### 1. レコーディングを開始するサイトを開く
 
-はじめに、株式会社チュートリアル（https://tutorial.co.jp）のホームページを開いてください。
+はじめに、[株式会社チュートリアルのホームページ](https://tutorial.co.jp)を開いてください。
 
- ![tutorialHP](../.gitbook/assets/rec1.png "会社トップページ") 
+ ![tutorialHP](../.gitbook/assets/rec1.png "会社トップページ")  
 
 ### 2. Robotic Crowd Agent のポップアップを表示して、RECボタンでレコーディングを開始する
 
 Chrome のアドレスバー右側にある、猫のマークをクリックしてください。
 すると、下図のように、ポップアップが表示されます。
 
-ここで、「REC」という赤いボタンをクリックします。この状態で、上に<span color="red">● recording</span>と表示されたと思います。この状態が、レコーディングモードです。ここから操作の自動記録が開始します。
+ここで、「REC」という赤いボタンをクリックします。この状態で、上に<font color="red">● recording</font>と表示されたと思います。この状態が、レコーディングモードです。ここから操作の自動記録が開始します。
 
 ![nekoclick](../.gitbook/assets/rec2.png) 
 
