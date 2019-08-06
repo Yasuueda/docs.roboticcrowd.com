@@ -1,10 +1,10 @@
 # Google Drive
 
-### 概要
+## 概要
 
 Robotic Crowdでは、Google Drive APIと連携する事で「SaveFile」と「GetFile」アクションにおいてGoogle Driveからファイルの取得やアップロード、削除などの操作が可能になります。
 
-###  Google Driveとのコネクション作成
+## Google Driveとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -22,8 +22,7 @@ Robotic Crowdでは、Google Drive APIと連携する事で「SaveFile」と「G
 
 ![](../.gitbook/assets/google_account.png)
 
-アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。
-「Google ドライブのすべてのファイルの表示、編集、作成、削除」という項目では、「Robotic Crowd」はユーザーの代わりに、下記の操作を行う権限を要求します。
+アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。 「Google ドライブのすべてのファイルの表示、編集、作成、削除」という項目では、「Robotic Crowd」はユーザーの代わりに、下記の操作を行う権限を要求します。
 
 -ファイルの表示
 
@@ -48,3 +47,4 @@ Robotic Crowdでは、Google Drive APIと連携する事で「SaveFile」と「G
 「許可」をクリックすると、Robotic Crowdのコネクション画面にリダイレクトされます。「Google Drive」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_gdrive.png)
+

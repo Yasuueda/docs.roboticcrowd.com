@@ -1,11 +1,10 @@
 # Dropbox
 
-### 概要
+## 概要
 
-Robotic Crowdでは、Dropbox APIと連携する事で「SaveFile」と「GetFile」アクションにおいて、Dropboxからのファイル取得やDropboxへのファイル保存が可能になります。
-Dropbox APIとの連携においては、ユーザー様が管理する全てのファイルにアクセスできる権限をもつ「Robotic Crowd」と連携する「Dropbox Full Access」と、アプリフォルダ内の「Robotic Crowd」のみにアクセス出来る「Robotic Crowd」と連携する「Dropbox」の二つのコネクションを選択できます。
+Robotic Crowdでは、Dropbox APIと連携する事で「SaveFile」と「GetFile」アクションにおいて、Dropboxからのファイル取得やDropboxへのファイル保存が可能になります。 Dropbox APIとの連携においては、ユーザー様が管理する全てのファイルにアクセスできる権限をもつ「Robotic Crowd」と連携する「Dropbox Full Access」と、アプリフォルダ内の「Robotic Crowd」のみにアクセス出来る「Robotic Crowd」と連携する「Dropbox」の二つのコネクションを選択できます。
 
-###  Dropboxとのコネクション作成
+## Dropboxとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -31,7 +30,7 @@ Dropbox APIとの連携においては、ユーザー様が管理する全ての
 
 ![](../.gitbook/assets/set_dropbox.png)
 
-###  Dropbox Full Accessとのコネクション作成
+## Dropbox Full Accessとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -49,11 +48,11 @@ Dropbox APIとの連携においては、ユーザー様が管理する全ての
 
 ![](../.gitbook/assets/dropbox_account.png)
 
-アカウントを選択すると、「Robotic Crowd」はユーザー様の代わりに、ユーザー様のdropboxアカウントで管理している全てのフォルダとファイルに対して読み書きを行う権限を要求します。
-このアクセス権限を「Robotic Crowd」に与える事に、同意した上で「許可」をクリックしてください。
+アカウントを選択すると、「Robotic Crowd」はユーザー様の代わりに、ユーザー様のdropboxアカウントで管理している全てのフォルダとファイルに対して読み書きを行う権限を要求します。 このアクセス権限を「Robotic Crowd」に与える事に、同意した上で「許可」をクリックしてください。
 
 ![](../.gitbook/assets/dropbox_full_integration.png)
 
 「許可」をクリックするとRobotic Crowdのコネクション画面にリダイレクトされます。「Dropbox Full Access」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_dropbox_full.png)
+

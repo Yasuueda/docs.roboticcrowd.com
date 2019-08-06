@@ -1,10 +1,10 @@
 # Google Spreadsheet
 
-### 概要
+## 概要
 
-Robotic Crowdでは、Google Spreadsheet APIと連携する事で、スプレッドシートを新たに作成したりCreateSpreadsheet)、セルを操作できるアクション(UpdateCells)が利用可能になります。
+Robotic Crowdでは、Google Spreadsheet APIと連携する事で、スプレッドシートを新たに作成したりCreateSpreadsheet\)、セルを操作できるアクション\(UpdateCells\)が利用可能になります。
 
-###  Google Spreadsheetとのコネクション作成
+## Google Spreadsheetとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -22,8 +22,7 @@ Robotic Crowdでは、Google Spreadsheet APIと連携する事で、スプレッ
 
 ![](../.gitbook/assets/google_account.png)
 
-アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。
-「Robotic Crowd」はユーザーの代わりに、下記の操作を行う権限を要求します。
+アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。 「Robotic Crowd」はユーザーの代わりに、下記の操作を行う権限を要求します。
 
 -スプレッドシートの表示
 
@@ -43,5 +42,5 @@ Robotic Crowdでは、Google Spreadsheet APIと連携する事で、スプレッ
 
 ![](../.gitbook/assets/sheet_integrations.png)
 
-「許可」をクリックすると、Robotic Crowdのコネクション画面にリダイレクトされます。「Google Spreadsheet」とのコネクションが作成されていれば成功です。
-![](../.gitbook/assets/set_sheet.png)
+「許可」をクリックすると、Robotic Crowdのコネクション画面にリダイレクトされます。「Google Spreadsheet」とのコネクションが作成されていれば成功です。 ![](../.gitbook/assets/set_sheet.png)
+

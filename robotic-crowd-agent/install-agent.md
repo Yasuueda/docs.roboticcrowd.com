@@ -1,11 +1,10 @@
-# Robotic Crowd Agentをインストールする
+# インストール方法
 
 ## 概要
 
 Robotic Crowd Agent をインストールする方法を説明します。
 
-Robotic Crowd Agent を使用するためには、Chrome に Robotic Crowd Agent という拡張機能をインストールする必要があります。
-今回はインストール方法を説明します。
+Robotic Crowd Agent を使用するためには、Chrome に Robotic Crowd Agent という拡張機能をインストールする必要があります。 今回はインストール方法を説明します。
 
 では、始めましょう。
 
@@ -16,45 +15,43 @@ Robotic Crowd Agent という拡張機能をインストールして、Robotic C
 ### 手順
 
 1. インストールを申請するページを開く
-1. 必要事項を記入し、インストールする
-1. 送られてくるメール内のリンクをクリックする
-1. Robotic Crowd Agent がインストールされていることを確認する
+2. 必要事項を記入し、インストールする
+3. 送られてくるメール内のリンクをクリックする
+4. Robotic Crowd Agent がインストールされていることを確認する
 
 ### 1. インストールを申請するページを開く
 
 [拡張機能インストールページ](https://docs.roboticcrowd.com/robotic-crowd-agent/install-agent) を開きます。
 
-![拡張機能インストールページ](../.gitbook/assets/install1.png)
+![&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30DA;&#x30FC;&#x30B8;](../.gitbook/assets/install1.png)
 
 ### 2. 必要事項を記入し、インストールする
 
-開いたページで、下にスクロールしていくと拡張機能インストール方法が出てきます。
-「姓」「名」「会社名」「E-mail」「電話番号」「コメント」を入力してください。
+開いたページで、下にスクロールしていくと拡張機能インストール方法が出てきます。 「姓」「名」「会社名」「E-mail」「電話番号」「コメント」を入力してください。
 
-![必要事項記入](../.gitbook/assets/install2.png)
+![&#x5FC5;&#x8981;&#x4E8B;&#x9805;&#x8A18;&#x5165;](../.gitbook/assets/install2.png)
 
 上の必要事項を入力していただきましたら、「拡張機能をインストールする」ボタンをクリックしてください。
 
-![インストール開始](../.gitbook/assets/install3.png)
+![&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x958B;&#x59CB;](../.gitbook/assets/install3.png)
 
 「拡張機能をインストールする」ボタンをクリックすると、下の画面が出てきます。インストールの申請が完了しました。
 
-![メッセージ](../.gitbook/assets/install4.png)
+![&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;](../.gitbook/assets/install4.png)
 
 ### 3. 送られてくるメール内のリンクをクリックする
 
 インストールの申請が完了すると、株式会社チュートリアルから、必要事項で入力していただいたE-mailアドレス宛に、件名「【無料 Google Chrome拡張機能】インストールリンクです」が届きます。メールを開いて、リンクをクリックしてください。
 
-![メールリンク](../.gitbook/assets/install5.png)
+![&#x30E1;&#x30FC;&#x30EB;&#x30EA;&#x30F3;&#x30AF;](../.gitbook/assets/install5.png)
 
 リンクをクリックすると、chrome ウェブストアのページが開きます。ページ右上にある「Chrome に追加」ボタンをクリックしてください。
 
-![Chrome追加](../.gitbook/assets/install6.png)
+![Chrome&#x8FFD;&#x52A0;](../.gitbook/assets/install6.png)
 
-「Robotic Crowd Agent」を追加しますか？と出てきますので、「拡張機能を追加」をクリックしてください。
-「拡張機能を追加」をクリックすると、インストールが完了します。
+「Robotic Crowd Agent」を追加しますか？と出てきますので、「拡張機能を追加」をクリックしてください。 「拡張機能を追加」をクリックすると、インストールが完了します。
 
-![拡張機能を追加](../.gitbook/assets/install7.png)
+![&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;](../.gitbook/assets/install7.png)
 
 Chrome に Robotic Crowd Agent という拡張機能をインストールすることができました。
 
@@ -62,10 +59,9 @@ Chrome に Robotic Crowd Agent という拡張機能をインストールする�
 
 Robotic Crowd Agent がインストールされていることを確認します。
 
-「Robotic Crowd Agent」が Chrome に追加されました、と表示されます。
-また、アドレスバーの右側に猫のマークが追加されています。
+「Robotic Crowd Agent」が Chrome に追加されました、と表示されます。 また、アドレスバーの右側に猫のマークが追加されています。
 
-![インストール完了](../.gitbook/assets/install8.png)
+![&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x5B8C;&#x4E86;](../.gitbook/assets/install8.png)
 
 これでインストールは完了しました。
 
@@ -76,3 +72,4 @@ Robotic Crowd Agent がインストールされていることを確認します
 Robotic Crowd Agent のプライバシーポリシーは [こちら](https://roboticcrowd.com/privacy-policy/) です。
 
 Robotic Crowd Agent を使うことができるようになりましたので、次回の記事から実際にRobotic Crowd Agent の使い方を説明していきます。
+

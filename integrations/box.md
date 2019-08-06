@@ -1,10 +1,10 @@
 # box
 
-### 概要
+## 概要
 
 Robotic Crowdでは、Box APIと連携する事で、「SaveFile」と「GetFile」アクションで、Boxからのファイル取得やBoxへのファイル保存が可能になります。
 
-###  Boxとのコネクション作成
+## Boxとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -29,3 +29,4 @@ Robotic Crowdでは、Box APIと連携する事で、「SaveFile」と「GetFile
 「許可」をクリックするとRobotic Crowdのコネクション画面にリダイレクトされます。「Box」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_box.png)
+

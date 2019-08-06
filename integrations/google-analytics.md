@@ -1,10 +1,10 @@
 # Google Analytics
 
-### 概要
+## 概要
 
-Robotic Crowdでは、Google Analytics APIと連携する事で、Google広告からレポートを取得するアクション(GetGoogleAdsReport)が利用可能になります。
+Robotic Crowdでは、Google Analytics APIと連携する事で、Google広告からレポートを取得するアクション\(GetGoogleAdsReport\)が利用可能になります。
 
-###  Google Analyticsとのコネクション作成
+## Google Analyticsとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
@@ -22,12 +22,11 @@ Robotic Crowdでは、Google Analytics APIと連携する事で、Google広告�
 
 ![](../.gitbook/assets/google_account.png)
 
-アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。
-「Googleアナリティクスデータの表示」という項目では、「Robotic Crowd」はユーザーの代わりに、ユーザーのAnalyticsアカウントのリソースを読み取る権限を要求します。
-アクセス権限を「Robotic Crowd」に与える事に同意した上で「許可」をクリックしてください。
+アカウントを選択すると、「Robotic Crowd」がユーザー様に変わって実行する処理に対して権限を与える画面が表示されます。 「Googleアナリティクスデータの表示」という項目では、「Robotic Crowd」はユーザーの代わりに、ユーザーのAnalyticsアカウントのリソースを読み取る権限を要求します。 アクセス権限を「Robotic Crowd」に与える事に同意した上で「許可」をクリックしてください。
 
 ![](../.gitbook/assets/analytics_integration.png)
 
 「許可」をクリックすると、Robotic Crowdのコネクション画面にリダイレクトされます。「Google Analytics」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_analytics.png)
+
