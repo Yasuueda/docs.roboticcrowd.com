@@ -21,7 +21,7 @@ Robotic Crowd Agent という拡張機能をインストールして、Robotic C
 
 ### 1. インストールを申請するページを開く
 
-[拡張機能インストールページ](https://docs.roboticcrowd.com/robotic-crowd-agent/install-agent) を開きます。
+[拡張機能インストールページ](https://tutorial.co.jp/news/release/2019/06/rc_agent/) を開きます。
 
 ![&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x30DA;&#x30FC;&#x30B8;](../.gitbook/assets/install1.png)
 
