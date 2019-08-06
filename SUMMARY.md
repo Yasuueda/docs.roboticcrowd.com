@@ -55,17 +55,17 @@
 
 ## ユーザーと権限
 
-* [プロジェクト](manage/project.md)
-* [組織](manage/organization.md)
-* [組織ユーザー](manage/organization-user.md)
-* [コラボレーター](manage/collaborator.md)
+* [プロジェクト](yzto/project.md)
+* [組織](yzto/organization.md)
+* [組織ユーザー](yzto/organization-user.md)
+* [コラボレーター](yzto/collaborator.md)
 
 ## Robotic Crowd Agent
 
-* [インストール方法](extention/install-agent.md)
-* [CSSセレクタの取得](extention/css-selector.md)
-* [連続した操作を記録](extention/recording.md)
-* [サイト上の情報をCSVに抽出](extention/extract-data.md)
-* [繰り返し作業を記録](extention/repeat-task.md)
-* [既存のワークフローを実行](extention/execute-workflow.md)
+* [インストール方法](robotic-crowd-agent/install-agent.md)
+* [CSSセレクタの取得](robotic-crowd-agent/css-selector.md)
+* [連続した操作を記録](robotic-crowd-agent/recording.md)
+* [サイト上の情報をCSVに抽出](robotic-crowd-agent/extract-data.md)
+* [繰り返し作業を記録](robotic-crowd-agent/repeat-task.md)
+* [既存のワークフローを実行](robotic-crowd-agent/execute-workflow.md)
 
