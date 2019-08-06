@@ -1,14 +1,14 @@
 # OneDrive
 
-## 概要
+### 概要
 
 Robotic Crowdでは、OneDrive APIと連携する事で、「SaveFile」と「GetFile」アクションでOneDriveからのファイルの取得やファイルの保存が可能になります。
 
-## OneDriveとのコネクション作成
+###  OneDriveとのコネクション作成
 
 最初にRobotic Crowdの左側のサイドバーの「コネクション」をクリックします。
 
-![](../.gitbook/assets/connection_click%20%281%29.png)
+![](../.gitbook/assets/connection_click.png)
 
 「コネクション」をクリックすると、APIとのコネクション一覧画面に移動します。右上の「アプリケーションを追加」をクリックします。
 
@@ -24,9 +24,8 @@ Robotic Crowdでは、OneDrive APIと連携する事で、「SaveFile」と「Ge
 
 アカウントを選択すると「Robotic Crowd」はユーザー様の代わりに、ユーザー様のOneDriveアカウントに格納されているすべてのファイルとフォルダに対する読み書きを行う権限を要求します。上記のアクセス権限を「Robotic Crowd」に与える事に、同意した上で「許可」をクリックしてください。
 
-![](https://github.com/Tutorial-Inc/docs.roboticcrowd.com/tree/aa3c70695dffd39c65a797553a0e9e660ed17383/.gitbook/assets/onedrive_integration.png)
+![](../.gitbook/assets/onedrive_integration.png)
 
 「許可」をクリックすると、Robotic Crowdのコネクション画面に戻ります。「OneDrive」とのコネクションが作成されていれば成功です。
 
 ![](../.gitbook/assets/set_onedrive.png)
-
