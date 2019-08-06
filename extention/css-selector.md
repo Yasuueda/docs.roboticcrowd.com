@@ -7,7 +7,7 @@
 Robotic Crowd Agentを使って、サイト上の要素の場所を特定するCSS Selector を取得する方法を説明します。
 
 事前に、Chrome に Robotic Crowd Agent という拡張機能をインストールしている必要があります。
-インストール方法は、こちらをご覧ください。
+インストール方法は、[こちら](https://tutorial.co.jp/news/release/2019/06/rc_agent/#install) をご覧ください。
 
 では、始めましょう。  
 
