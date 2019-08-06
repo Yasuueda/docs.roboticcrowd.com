@@ -55,8 +55,16 @@
 
 ## ユーザーと権限
 
-* [プロジェクト](yzto/project.md)
-* [組織](yzto/organization.md)
-* [組織ユーザー](yzto/organization-user.md)
-* [コラボレーター](yzto/collaborator.md)
+* [プロジェクト](manage/project.md)
+* [組織](manage/organization.md)
+* [組織ユーザー](manage/organization-user.md)
+* [コラボレーター](manage/collaborator.md)
+
+## Robotic Crowd Agent
+
+* [CSSセレクタの取得](extention/css-selector.md)
+* [連続した操作を記録](extention/recording.md)
+* [サイト上の情報をCSVに抽出](extention/extract-data.md)
+* [繰り返し作業を記録](extention/repeat-task.md)
+* [既存のワークフローを実行](extention/execute-workflow.md)
 
