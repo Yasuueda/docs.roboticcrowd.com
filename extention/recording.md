@@ -5,7 +5,7 @@
 Robotic Crowd Agentを使って、ウェブサイトを操作し、その操作を自動的に記録する方法を説明します。
 
 事前に、Chrome に Robotic Crowd Agent という拡張機能をインストールしている必要があります。
-インストール方法は、[こちら](https://tutorial.co.jp/news/release/2019/06/rc_agent/#install) をご覧ください。
+インストール方法は、[こちら](https://docs.roboticcrowd.com/robotic-crowd-agent/install-agent) をご覧ください。
 
 では、始めましょう。  
 

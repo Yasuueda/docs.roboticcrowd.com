@@ -5,7 +5,7 @@
 Robotic Crowd Agent を使って、繰り返し作業を記録する方法を説明します。
 
 事前に、Chrome に Robotic Crowd Agent という拡張機能をインストールしている必要があります。
-インストール方法は、[こちら](/robotic-crowd-agent/install-agent) をご覧ください。
+インストール方法は、[こちら](https://docs.roboticcrowd.com/robotic-crowd-agent/install-agent) をご覧ください。
 
 では、始めましょう。
 
