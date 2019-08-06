@@ -62,6 +62,7 @@
 
 ## Robotic Crowd Agent
 
+* [インストール方法](extention/install-agent.md)
 * [CSSセレクタの取得](extention/css-selector.md)
 * [連続した操作を記録](extention/recording.md)
 * [サイト上の情報をCSVに抽出](extention/extract-data.md)
