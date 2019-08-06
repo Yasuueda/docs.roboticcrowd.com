@@ -8,7 +8,7 @@
 * [ロボットを動かしてみる](overview/run-robot.md)
 * [実行要求とキュー](overview/session-and-queue.md)
 * [ワークフロー](overview/workflow.md)
-* [スケジュール](overview/sukejru.md)
+* [スケジュール](overview/schedule.md)
 
 ## Task
 
