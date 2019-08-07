@@ -59,7 +59,7 @@
   * [ReadCSV](../actions/excel.md#readcsv)
   * [DeleteRange](../actions/excel.md#deleterange)
 * Google Analytics
-  * [GetReport](../actions/google-analytics.md#getreport)
+  * [GetReport](../actions/marketing.md#getreport)
 * Google Spreadsheet
   * [CreateSpreadsheet](../actions/google-spreadsheet.md#createspreadsheet)
   * [GetSpreadsheet](../actions/google-spreadsheet.md#getspreadsheet)
